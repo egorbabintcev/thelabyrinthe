@@ -1,0 +1,47 @@
+.navi {
+  padding-top: rem(20);
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: rem(15);
+  }
+
+  &-logo {
+    grid-column: 1 / span 5;
+
+    img {
+      max-height: rem(37);
+      min-height: rem(37);
+    }
+  }
+
+  &-menu {
+    grid-column: 6 / span 7;
+
+    ul {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    &__link {
+      position: relative;
+      text-transform: capitalize;
+      font: {
+        size: rem(18);
+        weight: 400;
+      }
+
+      &.active::before {
+        background-color: var(--accent-color-blue);
+        border-radius: rem(3);
+        bottom: rem(-8);
+        height: rem(6);
+        width: 100%;
+        @include pseudo;
+      }
+    }
+  }
+}

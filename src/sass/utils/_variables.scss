@@ -1,3 +1,5 @@
 $font-path: '../fonts';
 $browser-context: 16;
-$breakpoints: ();
+$breakpoints: (
+  'lg' : 1170px,
+);

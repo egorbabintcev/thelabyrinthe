@@ -1,0 +1,28 @@
+html {
+  @include media('>=lg') {
+    font-size: 100%;
+  }
+  @include media('<lg') {
+    font-size: 1.36vw;
+  }
+}
+
+body {
+  color: var(--dark-color-blue);
+  font-family: var(--main-font);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: {
+    left: rem(15);
+    right: rem(15);
+  }
+
+  &_nogutter {
+    @include media('>=lg') {
+      padding: 0;
+    }
+  }
+}
