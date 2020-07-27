@@ -1,0 +1,36 @@
+:root {
+  --main-font: 'Gilroy', sans-serif;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('#{$font-path}/Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+      url('#{$font-path}/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Gilroy-Regular.woff') format('woff'),
+      url('#{$font-path}/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('#{$font-path}/Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+      url('#{$font-path}/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Gilroy-Bold.woff') format('woff'),
+      url('#{$font-path}/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('#{$font-path}/Gilroy-ExtraBold.eot');
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+      url('#{$font-path}/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Gilroy-ExtraBold.woff') format('woff'),
+      url('#{$font-path}/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
