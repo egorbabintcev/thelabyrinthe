@@ -11,7 +11,7 @@
   }
 
   &-content {
-    align-items: start;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -58,6 +58,10 @@
       margin-bottom: rem(10);
       max-height: rem(60);
       min-height: rem(60);
+    }
+
+    &-title {
+      line-height: 1.2;
     }
   }
 }
