@@ -58,7 +58,7 @@ gulp.task('server', () => {
     server: {
       baseDir: './public',
     },
-    online: false,
+    online: true,
   })
 });
 

@@ -26,3 +26,11 @@ body {
     }
   }
 }
+
+strong {
+  font-weight: 700;
+}
+
+span.lightblue {
+  color: var(--accent-color-blue);
+}
