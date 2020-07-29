@@ -1,0 +1,112 @@
+.strategy {
+  background: {
+    image: url('../img/strategy-background.jpg');
+    position: center;
+    size: cover;
+  }
+  color: #fff;
+  padding: {
+    bottom: rem(130);
+    top: rem(85)
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__bg-mockup {
+    bottom: rem(50);
+    max-height: rem(420);
+    min-height: rem(420);
+    max-width: rem(410);
+    min-width: rem(410);
+    position: absolute;
+    right: rem(-50);
+  }
+
+  &__title {
+    line-height: 1.5;
+    font: {
+      size: rem(36);
+      weight: 700;
+    }
+  }
+
+  &__subtitle {
+    line-height: 2;
+    margin-bottom: rem(120);
+    font-size: rem(24);
+  }
+
+  &-steps {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  & &-step:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  & &-step:nth-child(n+4) {
+    margin-bottom: 0;
+  }
+
+  &-step {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(110);
+    margin-right: rem(135);
+    max-width: rem(290);
+    min-width: rem(290);
+    position: relative;
+
+    &::before {
+      background-color: var(--accent-color-blue);
+      height: 100%;
+      left: rem(-5);
+      opacity: 0.25;
+      width: rem(1);
+      @include pseudo;
+    }
+
+    &__number {
+      color: var(--accent-color-blue);
+      font-weight: 700;
+      position: relative;
+
+      &-count {
+        font-size: rem(140);
+        opacity: 0.25;
+      }
+
+      &-name {
+        font-size: rem(36);
+        left: 0;
+        position: absolute;
+        text-transform: uppercase;
+        @extend %center-vertical;
+      }
+    }
+
+    &__title {
+      font-size: rem(24);
+      line-height: 1.25;
+      margin-bottom: rem(40);
+    }
+
+    &__text {
+      font-size: rem(16);
+      line-height: 1.5;
+
+      &:not(:last-child) {
+        margin-bottom: rem(35);
+      }
+    }
+  }
+}
