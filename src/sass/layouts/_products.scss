@@ -53,7 +53,7 @@
 
     &__tm {
       display: block;
-      color: #1c1c1c;
+      color: var(--dark-color-grey);
       font-size: rem(48);
       margin-bottom: rem(70);
     }
