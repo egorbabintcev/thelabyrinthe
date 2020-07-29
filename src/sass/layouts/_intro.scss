@@ -1,0 +1,42 @@
+.intro {
+  background: {
+    image: url('../img/intro-background.jpg');
+    position: center;
+    size: cover;
+  }
+  color: #fff;
+  padding: {
+    bottom: rem(30);
+    top: rem(120);
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &-img {
+    & img {
+      height: auto;
+      max-width: rem(1000);
+      min-width: rem(1000);
+    }
+  }
+
+  &-text {
+    right: rem(120);
+    position: absolute;
+    @extend %center-vertical;
+
+    &__title {
+      text-transform: uppercase;
+      font: {
+        size: rem(72);
+        weight: 700;
+      }
+    }
+
+    &__subtitle {
+      font-size: rem(48);
+    }
+  }
+}
