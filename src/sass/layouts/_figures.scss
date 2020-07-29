@@ -1,0 +1,55 @@
+.figures {
+  background-color: var(--light-color-indigo);
+  padding: {
+    bottom: rem(115);
+    top: rem(75);
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    line-height: 1.4;
+    margin-bottom: rem(120);
+    text-align: center;
+    font: {
+      size: rem(34);
+      weight: 400;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &-card {
+    max-width: rem(175);
+    min-width: rem(175);
+    text-align: center;
+
+    &__icon {
+      margin-bottom: rem(20);
+      max-height: rem(70);
+      min-height: rem(70);
+    }
+  }
+
+  &-mockup {
+    height: auto;
+    margin-bottom: rem(90);
+    width: 100%;
+  }
+
+  &__button {
+    background: linear-gradient(0deg, rgba(0,117,197,1) 0%, rgba(3,152,254,1) 100%);
+    border-radius: rem(7);
+    color: #fff;
+    font-size: rem(18);
+    padding: rem(30) rem(40);
+  }
+}
