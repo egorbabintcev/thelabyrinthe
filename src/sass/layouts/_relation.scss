@@ -1,0 +1,63 @@
+.relation {
+  background: {
+    image: url('../img/relation-background.jpg');
+    position: center;
+    size: cover;
+  }
+  color: #fff;
+  padding: rem(120) 0;
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: rem(36);
+    line-height: 1.5;
+    margin-bottom: rem(140);
+    text-align: center;
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &-card {
+    max-width: rem(250);
+    min-width: rem(250);
+
+    &__title {
+      margin-bottom: rem(30);
+      font: {
+        size: rem(24);
+        weight: 700;
+      }
+    }
+
+    &__icon {
+      margin-bottom: rem(40);
+      max-height: rem(55);
+      min-height: rem(55);
+      width: auto;
+    }
+
+    &__list li {
+      font-size: rem(16);
+      line-height: 1.5;
+      margin-bottom: rem(25);
+      position: relative;
+
+      &::before {
+        height: rem(11);
+        left: rem(-15);
+        transform: translateX(-100%);
+        width: rem(14);
+        @include pseudo(url('../img/check-icon.svg'));
+      }
+    }
+  }
+}

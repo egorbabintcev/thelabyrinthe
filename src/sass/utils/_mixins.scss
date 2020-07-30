@@ -1,6 +1,6 @@
-@mixin pseudo {
+@mixin pseudo($content: '') {
   box-sizing: border-box;
-  content: '';
+  content: $content;
   display: block;
   position: absolute;
 }
