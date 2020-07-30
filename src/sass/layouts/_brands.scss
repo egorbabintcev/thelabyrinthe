@@ -35,3 +35,239 @@
     }
   }
 }
+
+.brands {
+  padding: {
+    bottom: rem(140);
+    top: rem(80);
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    line-height: 0.75;
+    margin-bottom: rem(100);
+    font: {
+      size: rem(48);
+      weight: 700;
+    }
+  }
+
+  &-product {
+    align-items: stretch;
+    box-shadow: 0px 30px 38.8px 1.2px rgba(102, 181, 237, 0.16), 0px 0px 59px 0px rgba(83, 83, 83, 0.14);
+    display: flex;
+    margin-bottom: rem(100);
+    max-height: rem(650);
+    min-height: rem(650);
+    padding: {
+      right: rem(85);
+    }
+    width: 100%;
+
+
+    &__img {
+      align-items: center;
+      background: linear-gradient(90deg, rgba(1,99,166,1) 0%, rgba(4,142,240,1) 50%, rgba(37,164,251,1) 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      max-width: rem(405);
+      min-width: rem(405);
+      padding-top: rem(75);
+
+      &-title {
+        margin-bottom: rem(70);
+        text-transform: uppercase;
+        font: {
+          size: rem(30);
+          weight: 700;
+        }
+      }
+    }
+
+    &__info {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: rem(735);
+      min-width: rem(735);
+      padding: 0 rem(80);
+    }
+
+    &__title {
+      line-height: 1.25;
+      margin-bottom: rem(40);
+      font: {
+        size: rem(24);
+        weight: 600;
+      }
+    }
+
+    &__checklist {
+      list-style-image: url('../img/check-icon-blue.svg');
+      margin: {
+        bottom: rem(45);
+        left: rem(19);
+      }
+
+      li {
+        font-size: rem(18);
+        line-height: 1.45;
+        padding-left: rem(5);
+      }
+    }
+
+    &__subtitle {
+      line-height: 1.3;
+      margin-bottom: rem(60);
+      padding: rem(15) 0;
+      position: relative;
+      font: {
+        size: rem(18);
+        weight: 600;
+      }
+
+      &::before, &::after {
+        background-color: #e7e8eb;
+        height: rem(1);
+        width: 100%;
+        @include pseudo;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+
+    &__description {
+      color: var(--accent-color-grey);
+      font-size: rem(16);
+      line-height: 1.45;
+    }
+  }
+
+  &-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(150);
+    max-width: rem(880);
+    min-width: rem(880);
+  }
+
+  &__step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:not(:last-child)::before {
+      right: rem(-35);
+      top: rem(25);
+      transform: translateX(100%);
+      width: rem(120);
+      @include pseudo(url('../img/arrow.svg'));
+    }
+
+    &-icon {
+      margin-bottom: rem(15);
+      max-height: rem(65);
+      max-width: rem(60);
+      min-height: rem(65);
+      min-width: rem(60);
+    }
+
+    &-title {
+      font-size: rem(16);
+      text-align: center;
+    }
+  }
+}
+
+.categories {
+  border-bottom: 1px solid #e7e8eb;
+  padding: {
+    bottom: rem(80);
+    top: rem(120);
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: rem(36);
+    line-height: 1.5;
+    margin-bottom: rem(90);
+    text-align: center;
+  }
+
+  &__img {
+    max-width: rem(620);
+    min-width: rem(620);
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    max-width: rem(845);
+    min-width: rem(845);
+  }
+
+  &-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      top: 0;
+      width: rem(100);
+      @include pseudo(url('../img/arrow.svg'));
+    }
+
+    &:nth-child(1)::before {
+      transform: rotate(150deg) translate(-100%);
+    }
+
+    &:nth-child(2)::before {
+      transform: translate(-40%, -400%) rotate(70deg);
+    }
+
+    &:nth-child(3)::before {
+      transform: translate(-100%) rotate(45deg) translate(-25%, -200%);
+    }
+
+    &:nth-child(4)::before {
+      transform: translate(-100%) rotate(45deg) translate(-25%, -200%);
+    }
+
+    &:nth-child(2), &:nth-child(3) {
+      margin-top: rem(50);
+    }
+
+    &:nth-child(2) {
+      padding-right: rem(100);
+    }
+
+    &__icon {
+      margin-bottom: rem(15);
+      max-height: rem(75);
+      max-width: rem(75);
+      min-height: rem(75);
+      min-width: rem(75);
+    }
+  }
+}
