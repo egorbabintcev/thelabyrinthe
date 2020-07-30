@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <!-- Preloading scripts and styles -->
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="preload" href="js/main.js" as="script">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav class="navi">
+    <div class="container container_nogutter">
+      <div class="navi-logo">
+        <a href="/"><img src="./img/company-logo.png" alt=""></a>
+      </div>
+      <div class="navi-menu">
+        <ul>
+          <li class="navi-menu__item"><a href="/" class="navi-menu__link">Home</a></li>
+          <li class="navi-menu__item"><a href="/brands.html" class="navi-menu__link">Brands</a></li>
+          <li class="navi-menu__item"><a href="#" class="navi-menu__link">Management</a></li>
+          <li class="navi-menu__item"><a href="#" class="navi-menu__link">Investors</a></li>
+          <li class="navi-menu__item"><a href="#" class="navi-menu__link">In the news</a></li>
+          <li class="navi-menu__item"><a href="#" class="navi-menu__link active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="contacts">
+      <div class="container">
+        <h1 class="contacts__title">Contact</h1>
+        <div class="contacts-info">
+          <div class="contacts-info__card">
+            <svg class="contacts-info__card-icon">
+              <use xlink:href="../img/icons-sprite-light.svg#location"></use>
+            </svg>
+            <p class="contacts-info__card-title">500 Campus Drive, Suite 305 Morganville NJ 07751</p>
+          </div>
+          <div class="contacts-info__card">
+            <svg class="contacts-info__card-icon">
+              <use xlink:href="../img/icons-sprite-light.svg#mail"></use>
+            </svg>
+            <p class="contacts-info__card-title">info@thelabyrinthe.com</p>
+          </div>
+          <div class="contacts-info__card">
+            <svg class="contacts-info__card-icon">
+              <use xlink:href="../img/icons-sprite-light.svg#phone"></use>
+            </svg>
+            <p class="contacts-info__card-title">1 800 902 3239</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-to-action">
+      <div class="container">
+        <h2 class="call-to-action__title">Invest in the Labyrinthe Method.</h2>
+        <div class="call-to-action-wrapper">
+          <div class="call-to-action-img">
+            <img src="./img/catalog-image.png" alt="">
+          </div>
+          <form action="" class="call-to-action-form">
+            <p class="call-to-action-form__title">Tell us where to send your presentation.</p>
+            <p class="call-to-action-form__subtitle">Please complete the brief form below.</p>
+            <small class="call-to-action-form__hint">Enter your name</small>
+            <input type="text" class="call-to-action-form__input" placeholder="Your name">
+            <small class="call-to-action-form__hint">Email</small>
+            <input type="text" class="call-to-action-form__input" placeholder="mail@gmail.com">
+            <button type="submit" class="call-to-action-form__button">Email Presentation</button>
+            <label class="call-to-action-form__label">
+              <input type="checkbox" name="policy-agreement">
+              <span>I have read and agree to the privacy policy.</span>
+            </label>
+            <label class="call-to-action-form__label">
+              <input type="checkbox" name="contact-agreement">
+              <span>I agree to allow Labryinthe to contact me regarding investment opportunities.</span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="./img/company-logo-vertical.png" alt="">
+        <small>(c) 2020, Labyrinthe Holdings Corp.<br>All rights reserved.</small>
+      </div>
+      <div class="footer-navi">
+        <ul>
+          <li class="footer-navi__item"><a href="#" class="footer-navi__link">Home</a></li>
+          <li class="footer-navi__item"><a href="#" class="footer-navi__link">Brands</a></li>
+          <li class="footer-navi__item"><a href="#" class="footer-navi__link">Management</a></li>
+          <li class="footer-navi__item"><a href="#" class="footer-navi__link">Investors</a></li>
+          <li class="footer-navi__item"><a href="#" class="footer-navi__link">In the news</a></li>
+          <li class="footer-navi__item"><a href="#" class="footer-navi__link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <div class="footer-info__item">
+          <svg class="footer-info__item-icon">
+            <use xlink:href="./img/icons-sprite.svg#location"></use>
+          </svg>
+          <p class="footer-info__item-text">500 Campus Drive, Suite 305<br>Morganville NJ 07751 </p>
+        </div>
+        <div class="footer-info__item">
+          <svg class="footer-info__item-icon">
+            <use xlink:href="./img/icons-sprite.svg#phone"></use>
+          </svg>
+          <p class="footer-info__item-text"><strong>1 800 902-3239</strong></p>
+        </div>
+        <div class="footer-info__item">
+          <svg class="footer-info__item-icon">
+            <use xlink:href="./img/icons-sprite.svg#mail"></use>
+          </svg>
+          <p class="footer-info__item-text">info@thelabyrinthe.com</p>
+        </div>
+      </div>
+      <div class="footer-policy">
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
