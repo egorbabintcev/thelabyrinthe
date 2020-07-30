@@ -1,0 +1,45 @@
+.capitalization {
+  background-color: var(--light-color-indigo);
+  padding: {
+    bottom: rem(150);
+    top: rem(115);
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: rem(110);
+    font: {
+      size: rem(48);
+      weight: 700;
+    }
+  }
+
+  &-nums {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &-num {
+    // text-align: center;
+
+    .counter {
+      color: var(--accent-color-blue);
+      display: block;
+      margin-bottom: rem(40);
+      font: {
+        size: rem(48);
+        weight: 700;
+      }
+    }
+
+    .title {
+      font-size: rem(24);
+    }
+  }
+}

@@ -1,15 +1,13 @@
 .footer {
-  border-top: 1px solid var(--dark-color-grey);
   color: var(--dark-color-grey);
-  padding: {
-    bottom: rem(70);
-    top: rem(60);
-  }
+  padding-bottom: rem(70);
 
   .container {
     align-items: flex-start;
+    border-top: 1px solid var(--dark-color-grey);
     display: flex;
     justify-content: space-between;
+    padding-top: rem(60);
   }
 
   &-logo {

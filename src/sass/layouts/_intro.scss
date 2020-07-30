@@ -25,7 +25,8 @@
   &-text {
     right: rem(120);
     position: absolute;
-    @extend %center-vertical;
+    top: 35%;
+    transform: translateY(-50%);
 
     &__title {
       text-transform: uppercase;
