@@ -89,6 +89,11 @@
           weight: 700;
         }
       }
+
+      img {
+        max-height: rem(390);
+        min-height: rem(390);
+      }
     }
 
     &__info {
@@ -111,16 +116,21 @@
     }
 
     &__checklist {
-      list-style-image: url('../img/check-icon-blue.svg');
       margin: {
         bottom: rem(45);
         left: rem(19);
       }
 
       li {
+        background: {
+          image: url('../img/check-icon-blue.svg');
+          position: left center;
+          repeat: no-repeat;
+          size: rem(14);
+        }
         font-size: rem(18);
         line-height: 1.45;
-        padding-left: rem(5);
+        padding-left: rem(19);
       }
     }
 
