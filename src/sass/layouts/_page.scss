@@ -2,8 +2,11 @@ html {
   @include media('>=lg') {
     font-size: 100%;
   }
-  @include media('<lg') {
+  @include media('<lg', '>sm') {
     font-size: 1.36vw;
+  }
+  @include media('<=sm') {
+    font-size: 3.33vw;
   }
 }
 
@@ -18,6 +21,13 @@ body {
   padding: {
     left: rem(15);
     right: rem(15);
+  }
+
+  @include media('<=sm') {
+    padding: {
+      left: rem(30);
+      right: rem(30);
+    }
   }
 
   &_nogutter {

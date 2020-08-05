@@ -10,14 +10,30 @@
   &-logo {
     grid-column: 1 / span 5;
 
+    @include media('<=sm') {
+      grid-column: 1 / span 12;
+      text-align: center;
+    }
+
     img {
-      max-height: rem(37);
-      min-height: rem(37);
+      @include media('>sm') {
+        max-height: rem(37);
+        min-height: rem(37);
+      }
+
+      @include media('<=sm') {
+        max-height: rem(110);
+        min-height: rem(110);
+      }
     }
   }
 
   &-menu {
     grid-column: 6 / span 7;
+
+    @include media('<=sm') {
+      display: none;
+    }
 
     ul {
       align-items: center;
