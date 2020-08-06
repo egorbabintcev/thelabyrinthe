@@ -1,6 +1,10 @@
 .navi {
   padding: rem(20) 0;
 
+  @include media('<=sm') {
+    display: none;
+  }
+
   .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -30,10 +34,6 @@
 
   &-menu {
     grid-column: 6 / span 7;
-
-    @include media('<=sm') {
-      display: none;
-    }
 
     ul {
       align-items: center;

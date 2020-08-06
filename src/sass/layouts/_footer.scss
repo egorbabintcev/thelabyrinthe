@@ -8,21 +8,57 @@
     display: flex;
     justify-content: space-between;
     padding-top: rem(60);
+
+    @include media('<=sm') {
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &-logo {
     display: flex;
     flex-direction: column;
 
+    @include media('<=sm') {
+      align-items: center;
+      margin-bottom: rem(35);
+      order: 3;
+      text-align: center;
+    }
+
     img {
       height: auto;
       margin-bottom: rem(45);
       max-width: rem(200);
       min-width: rem(200);
+
+      @include media('<=sm') {
+        margin-bottom: rem(20);
+      }
     }
   }
 
   &-navi {
+
+    @include media('<=sm') {
+      margin-bottom: rem(35);
+      order: 1;
+    }
+
+    ul {
+      display: flex;
+
+      @include media('>sm') {
+        flex-direction: column;
+      }
+    }
+
+    & .col:not(:last-child) {
+      @include media('<=sm') {
+        margin-right: rem(70);
+      }
+    }
+
     &__item {
       margin-bottom: rem(15);
     }
@@ -33,6 +69,16 @@
   }
 
   &-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    @include media('<=sm') {
+      align-items: center;
+      margin-bottom: rem(35);
+      order: 2;
+    }
+
     &__item {
       align-items: flex-start;
       display: flex;
@@ -57,5 +103,9 @@
 
   &-policy {
     text-decoration: underline;
+
+    @include media('<=sm') {
+      order: 4;
+    }
   }
 }

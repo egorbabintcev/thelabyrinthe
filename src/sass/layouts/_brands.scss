@@ -1,6 +1,10 @@
 .brand-machine {
   background-color: var(--light-color-indigo);
-  padding: rem(150);
+  padding: rem(150) 0;
+
+  @include media('<=sm') {
+    padding: rem(70) 0;
+  }
 
   .container {
     align-items: center;
@@ -16,22 +20,50 @@
       size: rem(34);
       weight: 400;
     }
+
+    @include media('<=sm') {
+      font-size: rem(32);
+      margin-bottom: rem(60);
+    }
   }
 
   &-cards {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include media('>sm') {
+      padding: 0 rem(150);
+    }
+
+    @include media('<=sm') {
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &-card {
     max-width: rem(150);
     min-width: rem(150);
 
+    @include media('<=sm') {
+      text-align: center;
+      max-width: rem(250);
+      min-width: rem(250);
+
+      &:not(:last-child) {
+        margin-bottom: rem(40);
+      }
+    }
+
     &__icon {
       margin-bottom: rem(15);
       max-height: rem(70);
       min-height: rem(70);
+    }
+
+    &__title {
+      font-size: rem(19);
     }
   }
 }

@@ -10,6 +10,13 @@
     top: rem(100);
   }
 
+  @include media('<=sm') {
+    padding: {
+      bottom: rem(70);
+      top: rem(80);
+    }
+  }
+
   .container {
     align-items: center;
     display: flex;
@@ -26,6 +33,11 @@
       weight: 400;
     }
 
+    @include media('<=sm') {
+      font-size: rem(28);
+      margin-bottom: rem(45);
+    }
+
     &::before {
       background-color: #fff;
       bottom: rem(-30);
@@ -34,6 +46,10 @@
       min-width: rem(140);
       @include pseudo;
       @extend %center-horizontal;
+
+      @include media('<=sm') {
+        bottom: rem(-22);
+      }
     }
   }
 
@@ -45,17 +61,37 @@
       size: rem(24);
       weight: 400;
     }
+
+    @include media('<=sm') {
+      font-size: rem(20);
+      margin-bottom: rem(50);
+    }
   }
 
   &-cards {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include media('<=sm') {
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &-card {
     max-width: rem(230);
     min-width: rem(230);
+
+    @include media('<=sm') {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-bottom: rem(40);
+      }
+    }
 
     &__icon {
       height: auto;
@@ -69,6 +105,10 @@
       font: {
         size: rem(16);
         weight: 400;
+      }
+
+      @include media('<=sm') {
+        font-size: rem(18);
       }
     }
   }
