@@ -12,6 +12,10 @@
     @include media('<=sm') {
       align-items: center;
       flex-direction: column;
+
+      & > * {
+        width: 70%;
+      }
     }
   }
 
@@ -47,6 +51,7 @@
 
     ul {
       display: flex;
+      justify-content: space-between;
 
       @include media('>sm') {
         flex-direction: column;
@@ -102,6 +107,7 @@
   }
 
   &-policy {
+    text-align: center;
     text-decoration: underline;
 
     @include media('<=sm') {
