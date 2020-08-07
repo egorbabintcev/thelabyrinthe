@@ -18,14 +18,14 @@
     }
 
     @include media('<=sm') {
-      left: 0;
+      left: rem(10);
       position: absolute;
-      top: rem(6);
+      top: 0;
       z-index: 9999;
     }
 
     svg {
-      width: rem(60);
+      width: rem(75);
 
       path {
         stroke: var(--dark-color-grey);
@@ -44,12 +44,12 @@
 
     @include media('<=sm') {
       grid-column: 1 / span 12;
-      text-align: center;
+      text-align: right;
     }
 
     a {
       @include media('<=sm') {
-        width: 80%;
+        width: 85%;
       }
     }
 
@@ -70,18 +70,20 @@
     grid-column: 6 / span 7;
 
     @include media('<=sm') {
-      align-items: flex-start;
+      align-items: center;
       background-color: var(--accent-color-blue);
       color: #fff;
       display: flex;
+      flex-direction: column;
       height: 100%;
-      justify-content: center;
+      justify-content: space-between;
       left: 0;
-      padding-top: rem(40);
+      padding: rem(120) 0;
       position: fixed;
       top: 0;
-      transition: opacity 0.35s;
+      transition: opacity 400ms;
       width: 100%;
+      z-index: 9998;
 
       &.hidden {
         opacity: 0;
@@ -101,12 +103,13 @@
       @include media('<=sm') {
         flex-direction: column;
         justify-content: center;
+        margin-bottom: rem(60);
       }
     }
 
     &__item {
       @include media('<=sm') {
-        padding: rem(15) 0;
+        padding: rem(20) 0;
       }
     }
 
@@ -119,7 +122,7 @@
       }
 
       @include media('<=sm') {
-        font-size: rem(24);
+        font-size: rem(26);
       }
 
       &.active::before {
@@ -133,6 +136,16 @@
         @include media('<=sm') {
           background-color: #fff;
         }
+      }
+    }
+
+    &__contacts > strong {
+      display: block;
+      font-size: rem(24);
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: rem(20);
       }
     }
   }

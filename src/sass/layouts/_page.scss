@@ -13,6 +13,10 @@ html {
 body {
   color: var(--dark-color-blue);
   font-family: var(--main-font);
+
+  &.is-locked {
+    overflow: hidden;
+  }
 }
 
 .container {
