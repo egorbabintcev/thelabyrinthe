@@ -51,7 +51,8 @@
     }
 
     @include media('<=sm') {
-      // display: none;
+      position: relative;
+      right: rem(40);
     }
 
     img {
@@ -122,13 +123,17 @@
     }
 
     &__button {
-      align-self: center;
       background: linear-gradient(0deg, rgba(0,117,197,1) 0%, rgba(3,152,254,1) 100%);
       border-radius: rem(7);
       color: #fff;
       font-size: rem(18);
       margin-bottom: rem(30);
       padding: rem(30) rem(50);
+
+      @include media('<=sm') {
+        align-self: center;
+        width: 100%;
+      }
     }
 
     &__label {
