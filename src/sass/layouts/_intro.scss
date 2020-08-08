@@ -19,6 +19,11 @@
       height: auto;
       max-width: rem(1000);
       min-width: rem(1000);
+
+      @include media('<=sm') {
+        max-width: 80%;
+        min-width: 80%;
+      }
     }
   }
 
@@ -28,16 +33,25 @@
     top: 35%;
     transform: translateY(-50%);
 
+    @include media('<=sm') {
+      right: rem(30);
+      top: 50%;
+    }
+
     &__title {
       text-transform: uppercase;
       font: {
         size: rem(72);
         weight: 700;
       }
+
+      @include media('<=sm') {
+        font-size: rem(46);
+      }
     }
 
     &__subtitle {
-      font-size: rem(48);
+      font-size: rem(32);
     }
   }
 }

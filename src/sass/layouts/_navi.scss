@@ -139,13 +139,19 @@
       }
     }
 
-    &__contacts > strong {
-      display: block;
-      font-size: rem(24);
-      text-align: center;
+    &__contacts {
+        @include media('>sm') {
+          display: none;
+        }
 
-      &:not(:last-child) {
-        margin-bottom: rem(20);
+        strong {
+        display: block;
+        font-size: rem(24);
+        text-align: center;
+
+        &:not(:last-child) {
+          margin-bottom: rem(20);
+        }
       }
     }
   }
