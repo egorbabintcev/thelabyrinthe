@@ -132,6 +132,11 @@
     text-align: center;
     text-decoration: underline;
 
+    // button {
+    //   text-align: center;
+    //   text-decoration: underline;
+    // }
+
     @include media('<=sm') {
       order: 4;
     }
