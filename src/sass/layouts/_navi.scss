@@ -20,7 +20,7 @@
     @include media('<=sm') {
       left: rem(10);
       position: absolute;
-      top: 0;
+      top: rem(10);
       z-index: 9999;
     }
 
@@ -115,15 +115,27 @@
         weight: 400;
       }
 
+      @include media('>sm') {
+        &:hover::before {
+          transform: scaleX(1);
+        }
+      }
+
       @include media('<=sm') {
         font-size: rem(26);
       }
 
       &.active::before {
+        transform: scaleX(1);
+      }
+
+      &::before {
         background-color: var(--accent-color-blue);
         border-radius: rem(3);
         bottom: rem(-8);
         height: rem(6);
+        transform: scaleX(0);
+        transition: transform 400ms ease;
         width: 100%;
         @include pseudo;
 

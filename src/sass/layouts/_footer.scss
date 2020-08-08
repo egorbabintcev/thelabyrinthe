@@ -69,6 +69,25 @@
 
     &__link {
       font-size: rem(18);
+      position: relative;
+
+      @include media('>sm') {
+        &:hover::before {
+          transform: scaleX(1);
+        }
+
+        &::before {
+          background-color: var(--accent-color-blue);
+          border-radius: rem(3);
+          bottom: rem(-6);
+          height: rem(4);
+          transform: scaleX(0);
+          transform-origin: 0 50%;
+          transition: transform 400ms ease;
+          width: 100%;
+          @include pseudo;
+        }
+      }
     }
   }
 
