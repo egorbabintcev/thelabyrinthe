@@ -50,11 +50,12 @@
     @include media('<=sm') {
       max-width: 100%;
       min-width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: rem(25);
+      }
     }
 
-    &:not(:last-child) {
-      margin-bottom: rem(25);
-    }
 
     &::before {
       background-color: lighten(#0398fe, 30%);

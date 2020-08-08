@@ -44,24 +44,18 @@
 
     @include media('<=sm') {
       grid-column: 1 / span 12;
-      text-align: right;
-    }
-
-    a {
-      @include media('<=sm') {
-        width: 85%;
-      }
+      text-align: center;
     }
 
     img {
       @include media('>sm') {
-        max-height: rem(37);
-        min-height: rem(37);
+        max-height: rem(80);
+        min-height: rem(80);
       }
 
       @include media('<=sm') {
-        max-width: 100%;
-        min-width: 100%;
+        max-height: rem(114);
+        min-height: rem(114);
       }
     }
   }
