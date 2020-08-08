@@ -20,18 +20,32 @@
 <body>
   <nav class="navi">
     <div class="container container_nogutter">
-      <div class="navi-logo">
-        <a href="/"><img src="./img/company-logo.png" alt=""></a>
+      <div class="navi-toggler">
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100">
+          <path class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path class="line bottom"
+            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
       </div>
-      <div class="navi-menu">
+      <div class="navi-logo">
+        <a href="/"><img srcset="./img/company-logo.png 400w, ./img/company-logo-vertical.png 280w"
+            sizes="(max-width: 480px) 280px, 100vw" alt=""></a>
+      </div>
+      <div class="navi-menu hidden">
         <ul>
-          <li class="navi-menu__item"><a href="/" class="navi-menu__link">Home</a></li>
+          <li class="navi-menu__item"><a href="/" class="navi-menu__link active">Home</a></li>
           <li class="navi-menu__item"><a href="/brands.html" class="navi-menu__link">Brands</a></li>
-          <li class="navi-menu__item"><a href="/management.html" class="navi-menu__link active">Management</a></li>
+          <li class="navi-menu__item"><a href="/management.html" class="navi-menu__link">Management</a></li>
           <li class="navi-menu__item"><a href="#" class="navi-menu__link">Investors</a></li>
           <li class="navi-menu__item"><a href="/news.html" class="navi-menu__link">In the news</a></li>
           <li class="navi-menu__item"><a href="/contact.html" class="navi-menu__link">Contact</a></li>
         </ul>
+        <div class="navi-menu__contacts">
+          <strong>1 800 902-3239</strong>
+          <strong>info@thelabyrinthe.com</strong>
+        </div>
       </div>
     </div>
   </nav>
@@ -208,12 +222,16 @@
       </div>
       <div class="footer-navi">
         <ul>
-          <li class="footer-navi__item"><a href="/" class="footer-navi__link">Home</a></li>
-          <li class="footer-navi__item"><a href="/brands.html" class="footer-navi__link">Brands</a></li>
-          <li class="footer-navi__item"><a href="/management.html" class="footer-navi__link">Management</a></li>
-          <li class="footer-navi__item"><a href="#" class="footer-navi__link">Investors</a></li>
-          <li class="footer-navi__item"><a href="/news.html" class="footer-navi__link">In the news</a></li>
-          <li class="footer-navi__item"><a href="/contact.html" class="footer-navi__link">Contact Us</a></li>
+          <div class="col">
+            <li class="footer-navi__item"><a href="/" class="footer-navi__link">Home</a></li>
+            <li class="footer-navi__item"><a href="/brands.html" class="footer-navi__link">Brands</a></li>
+            <li class="footer-navi__item"><a href="/management.html" class="footer-navi__link">Management</a></li>
+          </div>
+          <div class="col">
+            <li class="footer-navi__item"><a href="#" class="footer-navi__link">Investors</a></li>
+            <li class="footer-navi__item"><a href="/news.html" class="footer-navi__link">In the news</a></li>
+            <li class="footer-navi__item"><a href="/contact.html" class="footer-navi__link">Contact Us</a></li>
+          </div>
         </ul>
       </div>
       <div class="footer-info">
@@ -242,4 +260,5 @@
     </div>
   </footer>
 
+  <script src="./js/main.js"></script>
 </body>
