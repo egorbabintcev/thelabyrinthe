@@ -3,6 +3,10 @@
   color: #fff;
   padding: rem(180) 0;
 
+  @include media('<=sm') {
+    padding: rem(80) 0;
+  }
+
   .container {
     align-items: center;
     display: flex;
@@ -15,12 +19,22 @@
       size: rem(48);
       weight: 700;
     }
+
+    @include media('<=sm') {
+      font-size: rem(36);
+      margin-bottom: rem(70);
+    }
   }
 
   &-info {
+    align-items: center;
     display: flex;
     justify-content: space-around;
     width: 100%;
+
+    @include media('<=sm') {
+      flex-direction: column;
+    }
 
     &__card {
       align-items: center;
@@ -28,6 +42,10 @@
       flex-direction: column;
       max-width: rem(240);
       min-width: rem(240);
+
+      @include media('<=sm') {
+        margin-bottom: rem(45);
+      }
 
       &-icon {
         margin-bottom: rem(10);

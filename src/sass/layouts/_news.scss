@@ -4,6 +4,10 @@
     top: rem(110);
   }
 
+  @include media('<=sm') {
+    padding: rem(80) 0;
+  }
+
   .container {
     align-items: center;
     display: flex;
@@ -16,6 +20,11 @@
       size: rem(48);
       weight: 700;
     }
+
+    @include media('<=sm') {
+      font-size: rem(32);
+      margin-bottom: rem(80);
+    }
   }
 
   &-wrapper {
@@ -23,6 +32,10 @@
     flex-direction: column;
     margin-bottom: rem(110);
     width: 100%;
+
+    @include media('<=sm') {
+      margin-bottom: rem(80);
+    }
   }
 
   &__button {
@@ -38,21 +51,45 @@
   align-items: center;
   border-bottom: 1px solid rgba(#1b1b1b, 0.3);
   display: flex;
-  padding: {
-    bottom: rem(50);
-    left: rem(80);
-    top: rem(50);
+
+  @include media('>sm') {
+    padding: {
+      bottom: rem(50);
+      left: rem(80);
+      top: rem(50);
+    }
+  }
+
+  @include media('<=sm') {
+    flex-direction: column;
+    padding: rem(30) 0;
   }
 
   &-logo {
-    height: auto;
-    margin-right: rem(100);
-    max-width: rem(220);
-    min-width: rem(220);
+    @include media('>sm') {
+      height: auto;
+      margin-right: rem(100);
+      max-width: rem(220);
+      min-width: rem(220);
+    }
+
+    @include media('<=sm') {
+      margin: 0 auto rem(35);
+      max-height: rem(60);
+      min-height: rem(60);
+    }
+  }
+
+  &-info {
+    width: 100%;
   }
 
   &__title {
     font-size: rem(22);
+
+    @include media('<=sm') {
+      font-size: rem(20);
+    }
   }
 
   &__subtitle {
@@ -61,6 +98,10 @@
     font: {
       size: rem(22);
       weight: 700;
+    }
+
+    @include media('<=sm') {
+      font-size: rem(20);
     }
   }
 
