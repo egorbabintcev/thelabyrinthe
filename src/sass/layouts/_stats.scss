@@ -108,3 +108,127 @@
     }
   }
 }
+
+.chart {
+  height: rem(405);
+  max-width: rem(800);
+  min-width: rem(800);
+  margin: {
+    bottom: rem(65);
+    left: rem(95);
+    top: rem(8)
+  }
+  position: relative;
+
+  &__title {
+    transform: rotate(-90deg);
+    bottom: 0;
+    left: rem(-80);
+    position: absolute;
+    transform-origin: 0 100%;
+  }
+
+  &-wrapper {
+    @include media('<=sm') {
+      overflow-x: scroll;
+      width: 100%;
+    }
+  }
+
+  &-cols {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+    &.hidden .col {
+      height: 0% !important;
+    }
+  }
+
+  &-bars {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &-bar {
+    position: relative;
+
+    &__num {
+      top: 0;
+      position: absolute;
+      left: rem(-45);
+      transform: translateY(-50%);
+    }
+
+    &__line {
+      top: 0;
+      background-color: #ccc;
+      height: rem(1);
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .col {
+    background: linear-gradient(0deg, rgba(0,117,197,1) 0%, rgba(3,152,254,1) 100%);
+    max-width: rem(100);
+    min-width: rem(100);
+    position: relative;
+    transition: height 500ms;
+
+    &:nth-of-type(1) {
+      height: 9.8%;
+    }
+
+    &:nth-of-type(2) {
+      height: 17.7%;
+    }
+
+    &:nth-of-type(3) {
+      height: 33.5%;
+    }
+
+    &:nth-of-type(4) {
+      height: 51.8%;
+    }
+
+    &:nth-of-type(5) {
+      height: 72.5%;
+    }
+
+    &:nth-of-type(6) {
+      height: 85.6%;
+    }
+
+    &__text {
+      bottom: 100%;
+      color: var(--accent-color-blue);
+      font-size: rem(16);
+      left: 50%;
+      margin-bottom: rem(5);
+      position: absolute;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    &__date {
+      position: absolute;
+      left: 50%;
+      margin-top: rem(15);
+      top: 100%;
+      transform: translateX(-50%);
+
+      &.heavy {
+        font-weight: 800;
+      }
+    }
+  }
+}
