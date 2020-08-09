@@ -15,7 +15,9 @@
   }
 
   &-img {
-    opacity: 0.75;
+    @include media('<=sm') {
+      opacity: 0.75;
+    }
 
     & img {
       height: auto;
