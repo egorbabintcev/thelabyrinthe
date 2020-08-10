@@ -9,22 +9,7 @@ block body
   include ../includes/navi
 
   main
-    section.contacts
-      .container
-        h1.contacts__title Contact
-        .contacts-info
-          .contacts-info__card
-            svg.contacts-info__card-icon
-              use(xlink:href='../img/icons-sprite-light.svg#location')
-            p.contacts-info__card-title 500 Campus Drive, Suite 305 Morganville NJ 07751
-          a.contacts-info__card(href='mailto:info@thelabyrinthe.com')
-            svg.contacts-info__card-icon
-              use(xlink:href='../img/icons-sprite-light.svg#mail')
-            p.contacts-info__card-title info@thelabyrinthe.com
-          a.contacts-info__card(href='tel:+18009023239')
-            svg.contacts-info__card-icon
-              use(xlink:href='../img/icons-sprite-light.svg#phone')
-            p.contacts-info__card-title 1 800 902 3239
+    include ../includes/contacts
     include ../includes/call-to-action
 
   include ../includes/footer
