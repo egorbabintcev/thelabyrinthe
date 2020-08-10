@@ -37,3 +37,24 @@ if (pathname === '/' || pathname === '/index.html') {
     }
   })
 }
+
+$('form').on('submit', function() {
+  const data = $(this).serialize();
+  $.ajax({
+    type: 'POST',
+    url: '/php/submit.php',
+    data,
+  });
+})
+
+
+$('form input[type="checkbox"]').on('change', function() {
+  const parentForm = $(this).closest('form');
+  const inputs = parentForm.find('input[type="checkbox"]').toArray();
+  const submitBtn = parentForm.find('button[type="submit"]');
+  if (inputs.every((input) => input.checked)) {
+    submitBtn.prop('disabled', null);
+  } else {
+    submitBtn.prop('disabled', true);
+  }
+})

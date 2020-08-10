@@ -129,6 +129,11 @@
       font-size: rem(18);
       margin-bottom: rem(30);
       padding: rem(30) rem(50);
+      transition: opacity 250ms;
+
+      &[disabled] {
+        opacity: 0.75;
+      }
 
       @include media('<=sm') {
         align-self: center;
