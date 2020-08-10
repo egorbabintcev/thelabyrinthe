@@ -1,0 +1,299 @@
+extends ../layouts/_base
+
+block head
+  - title = 'Labyrinthe Holding Incorporation'
+
+block body
+  //- navigation
+  - var active = '/'
+  include ../includes/navi
+  //- header
+  header.header
+    .container
+      .header-content
+        h1.header__title
+          strong
+            span.lightblue Labyrinthe is building
+          br
+          | a fully integrated, multi-faceted
+          br
+          | Hemp products brand company
+        .header-features
+          .header__feature
+            img.header__feature-icon(src='/img/header-icon-bulb.png', alt='')
+            h2.header__feature-title
+              | Building and Driving
+              br
+              | Innovative Brands.
+          .header__feature
+            img.header__feature-icon(src='/img/header-icon-eco.png', alt='')
+            h2.header__feature-title
+              | From Plant
+              br
+              | to Finished Goods.
+      .header-img
+        img(src='/img/header-image.png', alt='')
+  //- main content
+  main
+    //- little slogan
+    section.slogan
+      .container
+        h3.slogan__title
+          | &ldquo;You don&rsquo;t get an opportunity every day to participate in the very early stages of the
+          | creation of a large global industry and that is what is happening now.&rdquo;
+        small.slogan__author The London Financial Times
+    //- stats section
+    section.stats
+      .container
+        h2.stats__title The Hemp-Sourced CBD Industry Opportunity
+        .stats-cards
+          .stats-card
+            p.stats-card__title
+              | Hemp Industry Daily projects retail
+              br
+              | CBD sales will increase to
+              strong
+                span.lightblue $10.3
+              br
+              | billion by 2024.
+          .stats-card
+            p.stats-card__title
+              | A five-year compound annual
+              br
+              | growth rate of
+              strong
+                span.lightblue 54%.
+        h3.stats__scheme-title Annual U.S. Hemp Oil Retail Sales Estimates: 2019-2024
+        .chart
+          p.chart__title Total Estimated Retail Sales
+          .chart-bars
+            .chart-bar
+              span.chart-bar__num(style='transform: translateY(-100%);') $0B
+            .chart-bar
+              span.chart-bar__num $2B
+              .chart-bar__line
+            .chart-bar
+              span.chart-bar__num $4B
+              .chart-bar__line
+            .chart-bar
+              span.chart-bar__num $6B
+              .chart-bar__line
+            .chart-bar
+              span.chart-bar__num $8B
+              .chart-bar__line
+            .chart-bar
+              span.chart-bar__num $10B
+              .chart-bar__line
+            .chart-bar
+              span.chart-bar__num $12B
+              .chart-bar__line
+          .chart-cols.hidden
+            .col
+              span.col__text $1.1B - $1.3B
+              span.col__date.heavy 2019
+            .col
+              span.col__text $1.98B - $2.3B
+              span.col__date.heavy 2020
+            .col
+              span.col__text $3.6B - $4.4B
+              span.col__date 2021
+            .col
+              span.col__text $5.6B - $6.8B
+              span.col__date 2022
+            .col
+              span.col__text $7.8B - $9.6B
+              span.col__date 2023
+            .col
+              span.col__text $9.3B - $11.3B
+              span.col__date 2024
+        img.stats__scheme-img(src='./img/stats-scheme.png', alt='')
+        small.stats__scheme-source
+          | Source: 2019 Hemp &amp; CBD Industry Factbook. Hemp Industry Daily. Published
+          | October 2019.
+    //- defining the concept
+    section.concept
+      .container
+        h2.concept__title
+          strong We develop products backed by science and innovation.
+          br
+          | Then, they are fed into our Demand Marketing Machine.
+        p.concept__subtitle
+          | Developed by Science
+          br
+          | Powered by the Demand Marketing Engine
+          br
+          | Fueled by Expertise
+        .concept-cards
+          .concept-card
+            img.concept-card__icon(src='/img/concept-icon-brain.png', alt='')
+            p.concept-card__title Developing products backed by science that deliver higher efficacy rates.
+          .concept-card
+            img.concept-card__icon(src='/img/concept-icon-msg.png', alt='')
+            p.concept-card__title Building brands that speak to consumers.
+          .concept-card
+            img.concept-card__icon(src='/img/concept-icon-metrics.png', alt='')
+            p.concept-card__title
+              | Designing low-cost, low-risk, scalable marketing programs that effectively
+              | drive revenue.
+          .concept-card
+            img.concept-card__icon(src='/img/concept-icon-cert.png', alt='')
+            p.concept-card__title
+              | Labyrinthe&rsquo;s team has over 30 years experience in Direct-to-Consumer
+              | marketing in the health and wellness verticals.
+    //- about brand machine
+    section.brand-machine
+      .container
+        h2.brand-machine__title
+          strong Our proprietary and proven Demand Marketing Engine
+          br
+          | powers the Brand Machine.
+        .brand-machine-cards
+          .brand-machine-card
+            img.brand-machine-card__icon(src='/img/brands-icon-shipment.png', alt='')
+            p.brand-machine-card__title Delivers In-Demand Products Direct to Consumers.
+          .brand-machine-card
+            img.brand-machine-card__icon(src='/img/brands-icon-bypass.png', alt='')
+            p.brand-machine-card__title Bypasses Traditional Retail Hurdles.
+          .brand-machine-card
+            img.brand-machine-card__icon(src='/img/brands-icon-cost.png', alt='')
+            p.brand-machine-card__title
+              | Performance
+              | Based System = Low Marketing Cost.
+          .brand-machine-card
+            img.brand-machine-card__icon(src='/img/brands-icon-scale.png', alt='')
+            p.brand-machine-card__title Achieves Rapid Scale.
+    //- products
+    section.products
+      .container.container_nogutter
+        h2.products__title
+          strong We have identified the following four vertical categories
+          br
+          | as having the highest level of long-term, sustainable,
+          br
+          | consumer demand.
+        p.products__subtitle
+          | Labyrinthe&rsquo;s flagship brand, LEFA, has already seen
+          strong
+            | resounding
+            | success.
+          br
+          | The LEFA brand products are made with organically grown hemp that delivers
+          br
+          | naturally occurring CBD via better absorption mechanisms, more efficiently.
+        .products-card
+          .products-card__img
+            img(src='/img/products-composition.png', alt='')
+          .products-card__info
+            span.products-card__tm
+              strong LEFA&trade;
+            p.products-card__descr
+              strong
+                span.lightblue
+                  | These products are unique
+                  br
+                  | in 2 primary
+                  | ways:
+            ul
+              li &bull; Premium Full Spectrum Hemp Oil
+              li &bull; High Absorption / Efficacy Rates
+            a.products-card__button(href='/brands.html') See all
+    //- company in figures
+    section.figures
+      .container
+        h2.figures__title
+          | Labyrinthe&rsquo;s management and board members
+          br
+          strong have a wealth of experience.
+        .figures-cards
+          .figures-card
+            img.figures-card__icon(src='/img/figures-icon-finance.png', alt='')
+            div
+              p.figures-card__title
+                strong 30+ years
+              p.figures-card__subtitle Experience in Finance and Capital markets.
+          .figures-card
+            img.figures-card__icon(src='/img/figures-icon-consumers.png', alt='')
+            div
+              p.figures-card__title
+                strong 30+ years
+              p.figures-card__subtitle Direct To Consumer Marketing Experience
+          .figures-card
+            img.figures-card__icon(src='/img/figures-icon-health.png', alt='')
+            div
+              p.figures-card__title
+                strong $150 Million in Revenue
+              p.figures-card__subtitle Generated in Health and wellness vertical.
+        img.figures-mockup(src='/img/figures-mockup.png', alt='')
+        a.figures__button(href='/management.html') More about the manual
+    //- steps of the strategy
+    section.strategy
+      .container
+        img.strategy__bg-mockup(src='/img/strategy-head-mockup.png', alt='')
+        h2.strategy__title An individual market launch strategy is developed for each product.
+        p.strategy__subtitle Our process can drive success for any product.
+        .strategy-steps
+          .strategy-step
+            .strategy-step__number
+              span.strategy-step__number-count 01
+              span.strategy-step__number-name Idea
+            h4.strategy-step__title Brand Building with Science and Strategy.
+            p.strategy-step__text
+              | Develop cutting edge products to satisfy consumers searching for safe,
+              | effective, non&dash;prescription, condition&dash;specific products.
+          .strategy-step
+            .strategy-step__number
+              span.strategy-step__number-count 02
+              span.strategy-step__number-name Formulation
+            h4.strategy-step__title Innovative formulas and packaging that attracts loyal consumers.
+            p.strategy-step__text
+              | Our strong relationships with select chemists and formulators allows us to
+              | quickly produce unique and superior products.
+            p.strategy-step__text
+              | &bull; FDA Registered and Audited Facilities
+              br
+              | &bull; GMP Certified
+              br
+              | &bull; USP Grade Materials
+              br
+              | &bull; Materials Tested Inbound to Prevent Contamination
+              br
+              | &bull; Full in-line testing from start to finish.
+          .strategy-step
+            .strategy-step__number
+              span.strategy-step__number-count 03
+              span.strategy-step__number-name Testing
+            h4.strategy-step__title Proprietary Predictive Modeling &amp; Forecasting Tools:
+            p.strategy-step__text
+              | Market testing to gain proof of concept before fully funded marketing
+              | rollouts to ensure successful campaigns, and high ROI.
+          .strategy-step
+            .strategy-step__number
+              span.strategy-step__number-count 04
+              span.strategy-step__number-name Marketing
+            h4.strategy-step__title Marketing that Produces Real Results.
+            p.strategy-step__text
+              strong Our Go-To-Market Strategy Includes:
+              br
+              | &bull; Affiliate Network Marketing
+              br
+              | &bull; Social Media Marketing
+              br
+              | &bull; Content Generation and
+              br
+              | &bull; Distribution
+              br
+              | &bull; Offline Marketing
+              br
+              | &bull; Digital marketing
+          .strategy-step
+            .strategy-step__number
+              span.strategy-step__number-count 05
+              span.strategy-step__number-name Sales
+            h4.strategy-step__title Marketing that Produces Real Results.
+            p.strategy-step__text
+              | Market testing to gain proof of concept before fully funded marketing
+              | rollouts to ensure successful campaigns, and high ROI.
+    //- call to action form
+    include ../includes/call-to-action
+  //- page footer
+  include ../includes/footer

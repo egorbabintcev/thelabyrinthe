@@ -1,0 +1,118 @@
+extends ../layouts/_base
+
+block head
+  - title = 'Labyrinthe Holding Incorporation - Management'
+
+block body
+  //- navigation
+  - var active = '/management.html'
+  include ../includes/navi
+
+  main
+    section.intro
+      .container
+        .intro-img
+          img(src='/img/products-composition-simple.png', alt='')
+        .intro-text
+          h1.intro-text__title Management
+    section.call-to-action
+      .container
+        h2.call-to-action__title Invest in the Labyrinthe Method.
+        .call-to-action-wrapper
+          .call-to-action-img
+            img(src='/img/catalog-image.png', alt='')
+          form.call-to-action-form(action='')
+            p.call-to-action-form__title Tell us where to send your presentation.
+            p.call-to-action-form__subtitle Please complete the brief form below.
+            small.call-to-action-form__hint Enter your name
+            input.call-to-action-form__input(type='text', name='Name', placeholder='Your name')
+            small.call-to-action-form__hint Enter your email
+            input.call-to-action-form__input(type='text', name='Email', placeholder='mail@gmail.com')
+            button.call-to-action-form__button(type='submit') Email Presentation
+            label.call-to-action-form__label
+              input(type='checkbox', name='policy-agreement')
+              span I have read and agree to the privacy policy.
+            label.call-to-action-form__label
+              input(type='checkbox', name='contact-agreement')
+              span I agree to allow Labryinthe to contact me regarding investment opportunities.
+    section.relation
+      .container
+        h2.relation__title
+          strong Two decades of thoroughly developed market
+          br
+          |         expertise and strategic relationship building.
+        .relation-cards
+          .relation-card
+            div
+              h4.relation-card__title Regulatory
+              img.relation-card__icon(src='/img/relation-icon-regulatory.png', alt='')
+            ul.relation-card__list
+              li Leading clinical formulation experts
+              li FDA registered and audited contract manufacturers
+              li
+                | Leading FDA and FTC legal teams with their fingers on the pulse of current regulatory policies.
+          .relation-card
+            div
+              h4.relation-card__title Marketing
+              img.relation-card__icon(src='/img/relation-icon-marketing.png', alt='')
+            ul.relation-card__list
+              li
+                | Cutting edge compliant and EDI ready fulfillment centers specializing in rapid direct-to-consumer and B2B shipping
+              li Highly skilled, campaign trained call center teams
+              li Talented, creative design and development teams
+              li Vast affiliate marketing networks
+              li Brand development experts
+          .relation-card
+            div
+              h4.relation-card__title International Markets
+              img.relation-card__icon(src='/img/relation-icon-international.png', alt='')
+            ul.relation-card__list
+              li Vast national and international distribution channels
+              li Category specific merchant processing/banking relationships and expertise
+              li
+                | Sophisticated legal team specializing in intellectual property (copyright, trademark, patents)
+    section.figures
+      .container
+        h2.figures__title
+          | Labyrinthe&rsquo;s management and board members
+          br
+          strong have a wealth of experience.
+        .figures-cards
+          .figures-card
+            img.figures-card__icon(src='/img/figures-icon-finance.png', alt='')
+            div
+              p.figures-card__title
+                strong 30+ years
+              p.figures-card__subtitle Experience in Finance and Capital markets.
+          .figures-card
+            img.figures-card__icon(src='/img/figures-icon-consumers.png', alt='')
+            div
+              p.figures-card__title
+                strong 30+ years
+              p.figures-card__subtitle Direct To Consumer Marketing Experience
+          .figures-card
+            img.figures-card__icon(src='/img/figures-icon-health.png', alt='')
+            div
+              p.figures-card__title
+                strong $150 Million in Revenue
+              p.figures-card__subtitle Generated in Health and wellness vertical.
+        img.figures-mockup(src='/img/figures-mockup.png', alt='')
+    section.contacts
+      .container
+        h1.contacts__title Contact
+        .contacts-info
+          .contacts-info__card
+            svg.contacts-info__card-icon
+              use(xlink:href='../img/icons-sprite-light.svg#location')
+            p.contacts-info__card-title 500 Campus Drive, Suite 305 Morganville NJ 07751
+          a.contacts-info__card(href='mailto:info@thelabyrinthe.com')
+            svg.contacts-info__card-icon
+              use(xlink:href='../img/icons-sprite-light.svg#mail')
+            p.contacts-info__card-title info@thelabyrinthe.com
+          a.contacts-info__card(href='tel:+18009023239')
+            svg.contacts-info__card-icon
+              use(xlink:href='../img/icons-sprite-light.svg#phone')
+            p.contacts-info__card-title 1 800 902 3239
+    include ../includes/call-to-action
+
+  include ../includes/footer

@@ -1,0 +1,179 @@
+extends ../layouts/_base
+
+block head
+  - title = 'Labyrinthe Holding Incorporation - Brands'
+
+block body
+  //- navigation
+  - var active = '/brands.html'
+  include ../includes/navi
+
+  main
+    section.intro
+      .container
+        .intro-img
+          img(src='/img/products-composition-simple.png', alt='')
+        .intro-text
+          h1.intro-text__title Innovative
+          p.intro-text__subtitle brands
+    section.call-to-action
+      .container
+        h2.call-to-action__title Invest in the Labyrinthe Method.
+        .call-to-action-wrapper
+          .call-to-action-img
+            img(src='/img/catalog-image.png', alt='')
+          form.call-to-action-form(action='')
+            p.call-to-action-form__title Tell us where to send your presentation.
+            p.call-to-action-form__subtitle Please complete the brief form below.
+            small.call-to-action-form__hint Enter your name
+            input.call-to-action-form__input(type='text', name='Name', placeholder='Your name')
+            small.call-to-action-form__hint Enter your email
+            input.call-to-action-form__input(type='text', name='Email', placeholder='mail@gmail.com')
+            button.call-to-action-form__button(type='submit') Email Presentation
+            label.call-to-action-form__label
+              input(type='checkbox', name='policy-agreement')
+              span I have read and agree to the privacy policy.
+            label.call-to-action-form__label
+              input(type='checkbox', name='contact-agreement')
+              span I agree to allow Labryinthe to contact me regarding investment opportunities.
+    section.concept
+      .container
+        h2.concept__title
+          strong We develop products backed by science and innovation.
+          br
+          |       Then, they are fed into our Demand Marketing Machine.
+        p.concept__subtitle
+          | Developed by Science
+          br
+          |       Powered by the Demand Marketing Engine
+          br
+          |       Fueled by Expertise
+        .concept-cards
+          .concept-card
+            img.concept-card__icon(src='/img/concept-icon-brain.png', alt='')
+            p.concept-card__title Developing products backed by science that deliver higher efficacy rates.
+          .concept-card
+            img.concept-card__icon(src='/img/concept-icon-msg.png', alt='')
+            p.concept-card__title Building brands that speak to consumers.
+          .concept-card
+            img.concept-card__icon(src='/img/concept-icon-metrics.png', alt='')
+            p.concept-card__title
+              | Designing low-cost, low-risk, scalable marketing programs that effectively drive revenue.
+          .concept-card
+            img.concept-card__icon(src='/img/concept-icon-cert.png', alt='')
+            p.concept-card__title
+              | Labyrinthe&rsquo;s team has over 30 years experience in Direct-to-Consumer marketing in the health and wellness verticals.
+    section.brand-machine
+      .container
+        h2.brand-machine__title
+          strong Our proprietary and proven Demand Marketing Engine
+          br
+          |       powers the Brand Machine.
+        .brand-machine-cards
+          .brand-machine-card
+            img.brand-machine-card__icon(src='/img/brands-icon-shipment.png', alt='')
+            p.brand-machine-card__title Delivers In-Demand Products Direct to Consumers.
+          .brand-machine-card
+            img.brand-machine-card__icon(src='/img/brands-icon-bypass.png', alt='')
+            p.brand-machine-card__title Bypasses Traditional Retail Hurdles.
+          .brand-machine-card
+            img.brand-machine-card__icon(src='/img/brands-icon-cost.png', alt='')
+            p.brand-machine-card__title
+              | Performance
+              | Based System = Low Marketing Cost.
+          .brand-machine-card
+            img.brand-machine-card__icon(src='/img/brands-icon-scale.png', alt='')
+            p.brand-machine-card__title Achieves Rapid Scale.
+    section.categories
+      .container
+        h2.categories__title
+          strong We have identified the following four vertical categories
+          br
+          | as having the highest level of long-term, sustainable,
+          br
+          | consumer demand.
+        img.categories__img(src='/img/oil-liquid.png', alt='')
+        .categories-cards
+          .categories-card
+            svg.categories-card__icon
+              use(xlink:href='/img/icons-sprite.svg#pain')
+            h4.categories-card__title Pain management
+          .categories-card
+            svg.categories-card__icon
+              use(xlink:href='/img/icons-sprite.svg#intimacy')
+            h4.categories-card__title Intimacy Wellness
+          .categories-card
+            svg.categories-card__icon
+              use(xlink:href='/img/icons-sprite.svg#pet')
+            h4.categories-card__title Pets
+          .categories-card
+            svg.categories-card__icon
+              use(xlink:href='/img/icons-sprite.svg#beauty')
+            h4.categories-card__title Beauty
+    section.brands
+      .container
+        h2.brands__title Our Brands.
+        .brands-product
+          .brands-product__img
+            p.brands-product__img-title
+              | LEFA&trade;JOINT &amp; MUSCLE
+              br
+              | PAIN RELIEF CREAM
+            img(src='/img/products-cream.png', alt='')
+          .brands-product__info
+            h4.brands-product__title
+              | L&emacr;fa provides penetrating, relief of minor aches and pains of muscles and joints associated with:
+            ul.brands-product__checklist
+              li Arthritis
+              li Sports injuries
+              li Simple backache
+              li Strains
+              li Sprains
+              li Bruises
+            p.brands-product__subtitle
+              | Uniquely developed to include the proven power of menthol coupled with botanicals that support the skin&apos;s Endocannabinoid System.
+            small.brands-product__description
+              | * 3,000 mg Beta-Caryophyllene
+              br
+              |           * 500 mg Full Spectrum Hemp Extract
+              br
+              |           * Trusted, fast-acting Menthol
+              br
+              |           * Plus, it&rsquo;s deeply penetrating, absorbs fast, and smells great!
+        .brands-product
+          .brands-product__img
+            p.brands-product__img-title
+              | LEFA&trade;ORGANIC
+              br
+              | HEMP OIL
+            img(src='/img/products-oil.png', alt='')
+          .brands-product__info
+            h4.brands-product__title
+              | L&emacr;fa hemp oil tinctures contain potent panoramic full spectrum hemp oil that is rich in phytocannabinoids from hemp including naturally occurring CBD!
+            p.brands-product__subtitle
+              | This panoramic oil is a powerful blend of pain and inflammation fighting phytocompounds, that work together synergistically, to provide better benefits than a single compound like CBD can alone! That&rsquo;s called the Entourage Effect!
+            small.brands-product__description
+              | The entourage of phytocannabinoids in full spectrum hemp oil provides maximum support to the Endocannabinoid System, which helps regulate systems in your body that have a significant impact on managing pain sensation and inflammation.
+        .brands-steps
+          .brands__step
+            svg.brands__step-icon
+              use(xlink:href='../img/icons-sprite.svg#lightbulb')
+            h5.brands__step-title Idea
+          .brands__step
+            svg.brands__step-icon
+              use(xlink:href='../img/icons-sprite.svg#cart')
+            h5.brands__step-title D2C
+          .brands__step
+            svg.brands__step-icon
+              use(xlink:href='../img/icons-sprite.svg#marketplace')
+            h5.brands__step-title
+              | Online
+              br
+              | Marketplace
+          .brands__step
+            svg.brands__step-icon
+              use(xlink:href='../img/icons-sprite.svg#retail')
+            h5.brands__step-title Retail
+    include ../includes/call-to-action
+
+  include ../includes/footer

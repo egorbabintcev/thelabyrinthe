@@ -1,0 +1,20 @@
+section.call-to-action
+  .container
+    h2.call-to-action__title Invest in the Labyrinthe Method.
+    .call-to-action-wrapper
+      .call-to-action-img
+        img(src='/img/catalog-image.png', alt='')
+      form.call-to-action-form(action='/php/submit.php')
+        p.call-to-action-form__title Tell us where to send your presentation.
+        p.call-to-action-form__subtitle Please complete the brief form below.
+        small.call-to-action-form__hint Enter your name
+        input.call-to-action-form__input(type='text', name='Name', placeholder='Your name')
+        small.call-to-action-form__hint Enter your email
+        input.call-to-action-form__input(type='text', name='Email', placeholder='mail@gmail.com')
+        button.call-to-action-form__button(type='submit') Email Presentation
+        label.call-to-action-form__label
+          input(type='checkbox', name='policy-agreement')
+          span I have read and agree to the privacy policy.
+        label.call-to-action-form__label
+          input(type='checkbox', name='contact-agreement')
+          span I agree to allow Labryinthe to contact me regarding investment opportunities.

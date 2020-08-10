@@ -1,0 +1,79 @@
+extends ../layouts/_base
+
+block head
+  - title = 'Labyrinthe Holding Incorporation'
+
+block body
+  //- navigation
+  - var active = '/investors.html'
+  include ../includes/navi
+
+  main
+    section.intro
+      .container
+        .intro-img
+          img(src='/img/products-composition-simple.png', alt='')
+        .intro-text
+          h1.intro-text__title Investors
+    section.capitalization
+      .container
+        h2.capitalization__title Share Capitalization.
+        .capitalization-nums
+          .capitalization-num
+            span.counter 187,315,518
+            p.title Issued &amp; Outstanding
+          .capitalization-num
+            span.counter 5,700,000
+            p.title Reserved for Issuance
+          .capitalization-num
+            span.counter 193,015,518
+            p.title
+              | Total equity shares,
+              br
+              | as if converted
+    section.releases
+      .container
+        h2.releases__title Press Releases
+        .releases-wrapper
+          .release
+            small.release__date June 12, 2020
+            p.h4.release__title
+              | Labyrinthe Hemp Products Corp. Announces Manufacturing Plans For Hemp Oil Infused, Center-Filled Chewing Gum
+          .release
+            small.release__date June 9, 2020
+            p.h4.release__title
+              | Labyrinthe Hemp Products Corp. Announces Development Plans For A Bioequivalent Drug To Hydroxychloroquine
+          .release
+            small.release__date June 2, 2020
+            p.h4.release__title
+              | Labyrinthe Hemp Products Corp. Appoints Tyrone Ross Jr. As Vice President Communications
+          .release
+            small.release__date June 2, 2020
+            p.h4.release__title
+              | Labyrinthe Hemp Products Corp. Announces Delayed Filing Of Interim Disclosure Documents Under Temporary COVID-19 Relief Measures
+          .release
+            small.release__date May 14, 2020
+            p.h4.release__title Labyrinthe Hemp Products Corp. Announces Sales Data Analysis
+          .release
+            small.release__date May 12, 2020
+            p.h4.release__title Labyrinthe Hemp Products Corp. Announces the Development of its Acne Cream
+        a.releases__button(href='#') See all
+    section.contacts
+      .container
+        h1.contacts__title Contact
+        .contacts-info
+          .contacts-info__card
+            svg.contacts-info__card-icon
+              use(xlink:href='../img/icons-sprite-light.svg#location')
+            p.contacts-info__card-title 500 Campus Drive, Suite 305 Morganville NJ 07751
+          a.contacts-info__card(href='mailto:info@thelabyrinthe.com')
+            svg.contacts-info__card-icon
+              use(xlink:href='../img/icons-sprite-light.svg#mail')
+            p.contacts-info__card-title info@thelabyrinthe.com
+          a.contacts-info__card(href='tel:+18009023239')
+            svg.contacts-info__card-icon
+              use(xlink:href='../img/icons-sprite-light.svg#phone')
+            p.contacts-info__card-title 1 800 902 3239
+    include ../includes/call-to-action
+
+  include ../includes/footer

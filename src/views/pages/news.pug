@@ -1,0 +1,60 @@
+extends ../layouts/_base
+
+block head
+  - title = 'Labyrinthe Holding Incorporation - In the News'
+
+block body
+  //- navigation
+  - var active = '/news.html'
+  include ../includes/navi
+
+  main
+    section.intro
+      .container
+        .intro-img
+          img(src='/img/products-composition-simple.png', alt='')
+        .intro-text
+          h1.intro-text__title In The News
+    section.news
+      .container.container_nogutter
+        h2.news__title In the news
+        .news-wrapper
+          .headline
+            img.headline-logo(src='/img/headline-logo-1.png', alt='')
+            .headline-info
+              small.headline__title 5/21/20 &ndash; Press Release &ndash; Lefa launch
+              p.headline__subtitle
+                | Better than CBD Alone for Pain? Lefa, Innovative New Soothing Topical Loaded with Beta-Caryophyllene and CBD Now Available for Purchase Online via LefaLabs.com
+              a.headline__link(target='_blank', href='http://www.prweb.com/releases/better_than_cbd_alone_for_pain_lefa_innovative_new_soothing_topical_loaded_with_beta_caryophyllene_and_cbd_now_available_for_purchase_online_via_lefalabs_com/prweb17128373.htm') Read more
+          .headline
+            img.headline-logo(src='/img/headline-logo-2.png', alt='')
+            .headline-info
+              small.headline__title 5/22/20 &ndash; Times of CBD
+              p.headline__subtitle Labyrinthe Labs Launches Lefa Hemp-Infused Tincture Oils and Topical Cream
+              a.headline__link(target='_blank', href='https://timesofcbd.com/labyrinthe-labs-launches-lefa-hemp-infused-tincture-oils-and-topical-cream/') Read more
+          .headline
+            img.headline-logo(src='/img/headline-logo-3.png', alt='')
+            .headline-info
+              small.headline__title 7/3/20 &ndash; Valley Scene Magazine
+              p.headline__subtitle On Page 23: Hemp Oil Just For Pets
+              a.headline__link(target='_blank', href='https://www.valleyscenemagazine.com/ebook-1') Read more
+        a.news__button(href='#') Read more
+    section.contacts
+      .container
+        h1.contacts__title Contact
+        .contacts-info
+          .contacts-info__card
+            svg.contacts-info__card-icon
+              use(xlink:href='../img/icons-sprite-light.svg#location')
+            p.contacts-info__card-title 500 Campus Drive, Suite 305 Morganville NJ 07751
+          a.contacts-info__card(href='mailto:info@thelabyrinthe.com')
+            svg.contacts-info__card-icon
+              use(xlink:href='../img/icons-sprite-light.svg#mail')
+            p.contacts-info__card-title info@thelabyrinthe.com
+          a.contacts-info__card(href='tel:+18009023239')
+            svg.contacts-info__card-icon
+              use(xlink:href='../img/icons-sprite-light.svg#phone')
+            p.contacts-info__card-title 1 800 902 3239
+    include ../includes/call-to-action
+
+  include ../includes/footer
