@@ -20,7 +20,7 @@
     @include media('<=sm') {
       left: rem(10);
       position: absolute;
-      top: rem(4);
+      top: rem(-2);
       z-index: 9999;
     }
 
@@ -42,6 +42,10 @@
   &-logo {
     grid-column: 1 / span 5;
 
+    @include media('>sm') {
+      transform: translateY(rem(6));
+    }
+
     @include media('<=sm') {
       grid-column: 1 / span 12;
       text-align: right;
@@ -55,8 +59,8 @@
 
     img {
       @include media('>sm') {
-        max-height: rem(37);
-        min-height: rem(37);
+        max-height: rem(30);
+        min-height: rem(30);
       }
 
       @include media('<=sm') {
