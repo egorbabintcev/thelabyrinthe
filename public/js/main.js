@@ -4,6 +4,7 @@ document.querySelector('.navi-toggler svg').addEventListener('click', function()
   document.querySelector('body').classList.toggle('is-locked');
 })
 
+/*
 document.querySelectorAll('.btn-callback').forEach((btn) => {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
@@ -19,6 +20,7 @@ document.querySelectorAll('.btn-callback').forEach((btn) => {
     }
   })
 })
+*/
 
 function offset(el) {
   var rect = el.getBoundingClientRect(),
@@ -27,10 +29,13 @@ function offset(el) {
   return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 }
 
-window.addEventListener('scroll', () => {
-  const statsSection = document.querySelector('.stats');
-  const edge = window.innerWidth <= 480 ? offset(statsSection).top + 400 : offset(statsSection).top;
-  if (window.pageYOffset >= edge) {
-    document.querySelector('.chart-cols').classList.remove('hidden');
-  }
-})
+const { pathname } = window.location;
+if (pathname === '/' || pathname === '/index.html') {
+  window.addEventListener('scroll', () => {
+    const statsSection = document.querySelector('.stats');
+    const edge = window.innerWidth <= 480 ? offset(statsSection).top + 400 : offset(statsSection).top;
+    if (window.pageYOffset >= edge) {
+      document.querySelector('.chart-cols').classList.remove('hidden');
+    }
+  })
+}
