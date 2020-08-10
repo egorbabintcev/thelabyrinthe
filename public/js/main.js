@@ -4,7 +4,6 @@ document.querySelector('.navi-toggler svg').addEventListener('click', function()
   document.querySelector('body').classList.toggle('is-locked');
 })
 
-/*
 document.querySelectorAll('.btn-callback').forEach((btn) => {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
@@ -20,7 +19,6 @@ document.querySelectorAll('.btn-callback').forEach((btn) => {
     }
   })
 })
-*/
 
 function offset(el) {
   var rect = el.getBoundingClientRect(),

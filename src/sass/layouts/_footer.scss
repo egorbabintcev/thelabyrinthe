@@ -132,10 +132,14 @@
     text-align: center;
     text-decoration: underline;
 
-    // button {
-    //   text-align: center;
-    //   text-decoration: underline;
-    // }
+    button {
+      text-align: center;
+      text-decoration: underline;
+
+      &:focus {
+        outline: none;
+      }
+    }
 
     @include media('<=sm') {
       order: 4;

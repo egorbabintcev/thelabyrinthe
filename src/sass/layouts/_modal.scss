@@ -4,7 +4,7 @@
   left: 0;
   opacity: 0;
   overflow: hidden auto;
-  padding: rem(100) 0;
+  padding: rem(80) 0;
   position: fixed;
   right: 0;
   transition: opacity .4s;
@@ -17,7 +17,7 @@
 
   &.is-open {
     opacity: 1;
-    z-index: 999;
+    z-index: 9999;
   }
 
   &-close {
@@ -25,16 +25,24 @@
     right: 0;
     top: 0;
     transform: translate(calc(100% + #{rem(10)}));
+    z-index: 1;
     @include media('<=sm') {
-      right: rem(25);
+      right: rem(35);
       top: rem(25);
+      transform: translate(50%);
+    }
+
+    &:focus {
+      outline: none;
     }
 
     svg {
       fill: #fff;
+      height: rem(25);
+      width: rem(25);
 
       @include media('<=sm') {
-        fill: var(--dark-color-grey);
+        fill: var(--dark-color-blue);
       }
     }
   }
