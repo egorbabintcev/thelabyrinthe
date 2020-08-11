@@ -41,8 +41,8 @@
       display: block;
 
       @include media('>sm') {
-        max-height: rem(390);
-        min-height: rem(390);
+        max-height: rem(410);
+        min-height: rem(410);
       }
       @include media('<=sm') {
         margin: 0 auto;
@@ -72,10 +72,10 @@
     @include media('<=sm') {
       font-size: rem(36);
       margin-bottom: rem(30);
-    }
 
-    br {
-      display: none;
+      br {
+        display: none;
+      }
     }
 
     strong {
