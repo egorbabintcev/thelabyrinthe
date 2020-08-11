@@ -1,43 +1,38 @@
-document.querySelector('.navi-toggler svg').addEventListener('click', function() {
-  this.classList.toggle('active');
-  document.querySelector('.navi-menu').classList.toggle('hidden');
-  document.querySelector('body').classList.toggle('is-locked');
+// mobile devices menu opening
+$('.navi-toggler svg').on('click', function() {
+  $(this).toggleClass('active');
+  $('.navi-menu').toggleClass('hidden');
+  $('body').toggleClass('is-locked');
 })
 
-document.querySelectorAll('.btn-callback').forEach((btn) => {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault();
-    const { action, target } = this.dataset;
-    const modal = document.querySelector(target);
-    const body = document.querySelector('body');
-    if (action === 'open') {
-      modal.classList.add('is-open');
-      body.classList.add('is-locked');
-    } else if (action === 'close') {
-      modal.classList.remove('is-open');
-      body.classList.remove('is-locked');
-    }
-  })
+
+// modal windows close and open
+$('.modal-open').on('click', function(e) {
+  e.preventDefault();
+  $('body').addClass('is-locked');
+  $(this.dataset.target).fadeIn();
 })
 
-function offset(el) {
-  var rect = el.getBoundingClientRect(),
-  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-}
+$('.modal-close').on('click', function(e) {
+  e.preventDefault();
+  $('body').removeClass('is-locked');
+  $(this.dataset.target).fadeOut();
+})
 
+
+// animation of chart only on homepage
 const { pathname } = window.location;
 if (pathname === '/' || pathname === '/index.html') {
-  window.addEventListener('scroll', () => {
-    const statsSection = document.querySelector('.stats');
-    const edge = window.innerWidth <= 480 ? offset(statsSection).top + 400 : offset(statsSection).top;
-    if (window.pageYOffset >= edge) {
-      document.querySelector('.chart-cols').classList.remove('hidden');
+  $(window).on('scroll', function() {
+    const scroll = $(window).scrollTop();
+    if (scroll >= $('.stats').offset().top) {
+      $('.chart-cols').removeClass('hidden');
     }
   })
 }
 
+
+// form submit
 $('form').on('submit', function() {
   const data = $(this).serialize();
   $.ajax({
@@ -47,7 +42,7 @@ $('form').on('submit', function() {
   });
 })
 
-
+// validating conditions confirmation
 $('form input[type="checkbox"]').on('change', function() {
   const parentForm = $(this).closest('form');
   const inputs = parentForm.find('input[type="checkbox"]').toArray();

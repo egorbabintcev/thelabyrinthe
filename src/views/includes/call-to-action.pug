@@ -8,13 +8,17 @@ section.call-to-action
         p.call-to-action-form__title Tell us where to send your presentation.
         p.call-to-action-form__subtitle Please complete the brief form below.
         small.call-to-action-form__hint Enter your name
-        input.call-to-action-form__input(type='text', name='Name', placeholder='Your name')
+        input.call-to-action-form__input(type='text', name='Name', placeholder='Your name', required)
         small.call-to-action-form__hint Enter your email
-        input.call-to-action-form__input(type='text', name='Email', placeholder='mail@gmail.com')
+        input.call-to-action-form__input(type='text', name='Email', placeholder='mail@gmail.com', required)
         button.call-to-action-form__button(type='submit', disabled) Email Presentation
         label.call-to-action-form__label
           input(type='checkbox')
-          span I have read and agree to the privacy policy.
+          span
+            | I have read and agree to the
+            |
+            a.modal-open(href='#', data-target='#modal-policy') privacy policy
+            | .
         label.call-to-action-form__label
           input(type='checkbox')
           span I agree to allow Labryinthe to contact me regarding investment opportunities.
