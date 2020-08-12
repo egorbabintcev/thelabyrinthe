@@ -54,7 +54,7 @@ $('form input[type="checkbox"]').on('change', function() {
   }
 })
 
-$('button.slide-investor__control-btn').on('click', function(e) {
+$('button.slide-manager__control-btn').on('click', function(e) {
   e.preventDefault();
   const curSlide = $(this).closest('.slide');
   const menu = $(this).closest('.management-slider').find('.menu ul li');

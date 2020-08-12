@@ -122,13 +122,17 @@
         display: flex;
         padding: rem(15);
         position: relative;
+        transition: 200ms;
+        user-select: none;
 
         &::before {
           background-color: transparent;
+          clip-path: polygon(0 0, 100% 0, 100% 100%);
           height: rem(56);
-          width: rem(56);
           right: 0;
           transform: scaleX(0.5) translateX(100%) rotate(45deg);
+          transition: 200ms;
+          width: rem(56);
           z-index: 1;
           @include pseudo;
         }
@@ -175,7 +179,7 @@
         display: flex;
       }
 
-      &-investor {
+      &-manager {
         margin-bottom: rem(100);
         position: relative;
 
