@@ -93,3 +93,17 @@ $('.management-slider li').on('click', function() {
   slides.filter('.is-active').removeClass('is-active');
   $(slides[$(this).index()]).addClass('is-active');
 })
+
+$('.accordeon-toggle').on('click', function(e) {
+  e.preventDefault();
+
+  const accordeon = $(this).siblings('p:nth-last-child(-n + 2)');
+  if (accordeon.css('height') !== '0px') return;
+  accordeon.css('height', accordeon[0].scrollHeight + 'px');
+  $(this).hide();
+})
+
+$('.accordeon').on('transitionend', function() {
+  if ($(this).css('height') === '0px') return;
+  $(this).css('height', 'auto');
+})
