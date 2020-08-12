@@ -10,8 +10,18 @@
     top: rem(120);
   }
 
-  .container {
+  @include media('<=sm') {
+    padding: {
+      bottom: rem(50);
+      top: rem(50);
+    }
     position: relative;
+  }
+
+  .container {
+    @include media('>sm') {
+      position: relative;
+    }
   }
 
   &-img {
