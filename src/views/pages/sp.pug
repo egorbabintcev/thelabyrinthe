@@ -1,0 +1,16 @@
+extends ../layouts/_base
+
+block head
+  meta(property="og:title", content="Thank you for the application! 🔷")
+  - title = "Thank you for the application! 🔷"
+
+block body
+  include ../includes/navi
+  header.sp
+    .container
+      h1.sp__title
+        strong The application has been successfully sent.
+        br
+        | We will contact you shortly.
+      a.sp__btn(href="/") Return to the home page
+  include ../includes/footer

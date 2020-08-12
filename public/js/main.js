@@ -39,6 +39,9 @@ $('form').on('submit', function() {
     type: 'POST',
     url: '/php/submit.php',
     data,
+    complete: () => {
+      location.assign('/sp.html');
+    },
   });
 })
 
