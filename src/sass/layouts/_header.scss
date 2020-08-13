@@ -5,36 +5,29 @@
   }
 
   @include media('<=sm') {
-    padding: {
-      bottom: rem(70);
-      top: rem(35);
-    }
+    padding: rem(70) 0;
   }
 
   .container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'title image'
+                         'features image';
 
     @include media('<=sm') {
-      flex-direction: column;
-    }
-  }
-
-  &-content {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    @include media('<=sm') {
-      order: 2;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'title'
+                           'image'
+                           'features';
     }
   }
 
   &-img {
+    grid-area: image;
+
     @include media('<=sm') {
-      margin-bottom: rem(75);
+      margin-bottom: rem(30);
     }
 
     img {
@@ -53,8 +46,9 @@
   }
 
   &-features {
-    display: flex;
     align-items: center;
+    display: flex;
+    grid-area: features;
 
     @include media('<=sm') {
       align-items: flex-start;
@@ -63,10 +57,16 @@
   }
 
   &__title {
+    grid-area: title;
+    line-height: 1.2;
     margin-bottom: rem(90);
     font: {
       size: rem(33);
       weight: 400;
+    }
+
+    @include media('>sm') {
+      align-self: end;
     }
 
     @include media('<=sm') {
