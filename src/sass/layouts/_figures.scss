@@ -404,21 +404,3 @@
   }
 
 }
-
-.accordeon {
-  height: 0px;
-  overflow: hidden;
-  transition: height 500ms;
-
-  &-toggle {
-    color: var(--accent-color-blue);
-    font: {
-      size: rem(24);
-      weight: 700;
-    }
-
-    @include media('>sm') {
-      display: none;
-    }
-  }
-}
