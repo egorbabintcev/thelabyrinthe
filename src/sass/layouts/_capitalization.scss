@@ -5,6 +5,11 @@
     top: rem(115);
   }
 
+  @include media('<=sm') {
+    padding: rem(80) 0;
+    text-align: center;
+  }
+
   .container {
     align-items: center;
     display: flex;
@@ -17,15 +22,32 @@
       size: rem(48);
       weight: 700;
     }
+
+    @include media('<=sm') {
+      font-size: rem(36);
+      margin-bottom: rem(70);
+    }
   }
 
   &-nums {
     display: flex;
-    justify-content: space-around;
     width: 100%;
+
+    @include media('>sm') {
+      justify-content: space-around;
+    }
+
+    @include media('<=sm') {
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &-num {
+
+    @include media('<=sm') {
+      margin-bottom: rem(50);
+    }
 
     .counter {
       color: var(--accent-color-blue);
@@ -34,6 +56,11 @@
       font: {
         size: rem(48);
         weight: 700;
+      }
+
+      @include media('<=sm') {
+        font-size: rem(36);
+        margin-bottom: rem(10);
       }
     }
 
