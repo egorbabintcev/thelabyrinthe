@@ -1,11 +1,4 @@
 .figures {
-  &_small {
-    background-color: var(--light-color-indigo);
-    padding: {
-      bottom: rem(115);
-      top: rem(75);
-    }
-  }
 
   .container {
     align-items: center;
@@ -87,6 +80,22 @@
     color: #fff;
     font-size: rem(18);
     padding: rem(30) rem(40);
+  }
+
+  &_small {
+    background-color: var(--light-color-indigo);
+    padding: {
+      bottom: rem(115);
+      top: rem(75);
+    }
+
+    .figures-cards {
+      margin-bottom: rem(120);
+
+      @include media('<=sm') {
+        margin-bottom: rem(80);
+      }
+    }
   }
 }
 
@@ -340,6 +349,53 @@
               height: 0px;
               overflow: hidden;
               transition: height 500ms;
+            }
+          }
+        }
+      }
+    }
+
+    &_image-only {
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: rem(90);
+      width: 100%;
+
+      @include media('>sm') {
+        padding: 0 rem(100);
+      }
+
+      @include media('<=sm') {
+        align-items: stretch;
+        grid-template-columns: 1fr;
+      }
+
+      .menu {
+        position: static;
+
+        @include media('>sm') {
+          align-self: start;
+        }
+
+        @include media('<=sm') {
+          margin-bottom: rem(60);
+        }
+      }
+
+      .slide {
+        padding: 0;
+
+        &-manager {
+          text-align: center;
+          margin-bottom: 0;
+
+          &__img {
+            @include media('>sm') {
+              max-height: rem(325);
+              max-width: rem(325);
+              min-height: rem(325);
+              min-width: rem(325);
             }
           }
         }
