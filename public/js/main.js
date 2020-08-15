@@ -33,16 +33,15 @@ if (pathname === '/' || pathname === '/index.html') {
 
 
 // form submit
-$('form').on('submit', function() {
+$('form').on('submit', function(e) {
+  e.preventDefault();
   const data = $(this).serialize();
   $.ajax({
     type: 'POST',
     url: '/php/submit.php',
     data,
-    complete: () => {
-      location.assign('/sp.html');
-    },
   });
+  location.assign('/sp.html');
 })
 
 // validating conditions confirmation
