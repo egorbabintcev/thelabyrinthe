@@ -2,7 +2,6 @@ extends ../layouts/_base
 
 block head
   - title = 'Labyrinthe Holding Incorporation 🔷'
-  meta(property="og:title", content="Labyrinthe Holding Incorporation 🔷")
 
 block body
   //- navigation
@@ -11,32 +10,27 @@ block body
   //- header
   header.header
     .container
-      h1.header__title
-        strong
-          span.lightblue Labyrinthe
-          |
-          | is building
-        br
-        |
-        | a fully integrated, multi-faceted
-        br
-        |
-        | Hemp products brand company
-      .header-features
-        .header__feature
-          img.header__feature-icon(src='/img/header-icon-bulb.png', alt='')
-          h2.header__feature-title
-            | Building and Driving
-            br
-            |
-            | Innovative Brands.
-        .header__feature
-          img.header__feature-icon(src='/img/header-icon-eco.png', alt='')
-          h2.header__feature-title
-            | From Plant
-            br
-            |
-            | to Finished Goods.
+      .header-content
+        h1.header__title
+          strong
+            span.lightblue Labyrinthe is building
+          br
+          | a fully integrated, multi-faceted
+          br
+          | Hemp products brand company
+        .header-features
+          .header__feature
+            img.header__feature-icon(src='/img/header-icon-bulb.png', alt='')
+            h2.header__feature-title
+              | Building and Driving
+              br
+              | Innovative Brands.
+          .header__feature
+            img.header__feature-icon(src='/img/header-icon-eco.png', alt='')
+            h2.header__feature-title
+              | From Plant
+              br
+              | to Finished Goods.
       .header-img
         img(src='/img/header-image.png', alt='')
   //- main content
@@ -229,105 +223,7 @@ block body
               p.figures-card__title
                 strong $150 Million in Revenue
               p.figures-card__subtitle Generated in Health and wellness vertical.
-        .management-slider.management-slider_image-only
-            .menu
-              ul
-                li.menu-item.is-active
-                  img.menu-item__avatar(src='/img/manager-avatar-small-1.png', alt='')
-                  div
-                    p.menu-item__name
-                      strong Kirill V. Chumenko
-                    p.menu-item__role Co-Chief Executive Officer
-                li.menu-item
-                  img.menu-item__avatar(src='/img/manager-avatar-small-2.png', alt='')
-                  div
-                    p.menu-item__name
-                      strong Frank V. Barone Jr.
-                    p.menu-item__role Co-Chief Executive Officer
-                li.menu-item
-                  img.menu-item__avatar(src='/img/manager-avatar-small-1.png', alt='')
-                  div
-                    p.menu-item__name
-                      strong Kirill V. Chumenko
-                    p.menu-item__role Co-Chief Executive Officer
-                li.menu-item
-                  img.menu-item__avatar(src='/img/manager-avatar-small-2.png', alt='')
-                  div
-                    p.menu-item__name
-                      strong Frank V. Barone Jr.
-                    p.menu-item__role Co-Chief Executive Officer
-                li.menu-item
-                  img.menu-item__avatar(src='/img/manager-avatar-small-1.png', alt='')
-                  div
-                    p.menu-item__name
-                      strong Kirill V. Chumenko
-                    p.menu-item__role Co-Chief Executive Officer
-            .slide-wrapper
-              .slide.is-active
-                .slide-manager
-                  p.slide-manager__title
-                    strong — Kirill V. Chumenko
-                    br
-                    | Co-Chief Executive Officer
-                  img.slide-manager__img(src='/img/manager-avatar-1.png', alt='')
-                  button.slide-manager__control-btn.prev
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-left")
-                  button.slide-manager__control-btn.next
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-right")
-              .slide
-                .slide-manager
-                  p.slide-manager__title
-                    strong — Kirill V. Chumenko
-                    br
-                    | Co-Chief Executive Officer
-                  img.slide-manager__img(src='/img/manager-avatar-2.png', alt='')
-                  button.slide-manager__control-btn.prev
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-left")
-                  button.slide-manager__control-btn.next
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-right")
-              .slide
-                .slide-manager
-                  p.slide-manager__title
-                    strong — Kirill V. Chumenko
-                    br
-                    | Co-Chief Executive Officer
-                  img.slide-manager__img(src='/img/manager-avatar-1.png', alt='')
-                  button.slide-manager__control-btn.prev
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-left")
-                  button.slide-manager__control-btn.next
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-right")
-              .slide
-                .slide-manager
-                  p.slide-manager__title
-                    strong — Kirill V. Chumenko
-                    br
-                    | Co-Chief Executive Officer
-                  img.slide-manager__img(src='/img/manager-avatar-2.png', alt='')
-                  button.slide-manager__control-btn.prev
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-left")
-                  button.slide-manager__control-btn.next
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-right")
-              .slide
-                .slide-manager
-                  p.slide-manager__title
-                    strong — Kirill V. Chumenko
-                    br
-                    | Co-Chief Executive Officer
-                  img.slide-manager__img(src='/img/manager-avatar-1.png', alt='')
-                  button.slide-manager__control-btn.prev
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-left")
-                  button.slide-manager__control-btn.next
-                    svg
-                      use(xlink:href="/img/icons-sprite.svg#arrow-right")
+        img.figures-mockup(src='/img/figures-mockup.png', alt='')
         a.figures__button(href='/management.html') More about the manual
     //- steps of the strategy
     section.strategy
