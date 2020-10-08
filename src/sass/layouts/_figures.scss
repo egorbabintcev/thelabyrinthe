@@ -24,6 +24,7 @@
   &-cards {
     display: flex;
     justify-content: space-around;
+    margin-bottom: rem(80);
     width: 100%;
 
     @include media('<=sm') {
@@ -69,7 +70,6 @@
   }
 
   &-mockup {
-    margin-bottom: rem(90);
     max-height: rem(475);
     object-fit: cover;
     object-position: top center;
@@ -81,15 +81,13 @@
     border-radius: rem(7);
     color: #fff;
     font-size: rem(18);
+    margin-bottom: rem(80);
     padding: rem(30) rem(40);
   }
 
   &_small {
     background-color: var(--light-color-indigo);
-    padding: {
-      bottom: rem(115);
-      top: rem(75);
-    }
+    padding-top: rem(75);
 
     .figures-cards {
       margin-bottom: rem(120);

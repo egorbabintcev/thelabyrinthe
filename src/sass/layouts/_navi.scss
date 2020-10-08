@@ -20,7 +20,7 @@
     @include media('<=sm') {
       left: rem(10);
       position: absolute;
-      top: rem(-2);
+      top: rem(12);
       z-index: 9998;
     }
 
@@ -53,14 +53,14 @@
 
     a {
       @include media('<=sm') {
-        width: 85%;
+        width: 70%;
       }
     }
 
     img {
       @include media('>sm') {
-        max-height: rem(30);
-        min-height: rem(30);
+        max-height: rem(40);
+        min-height: rem(40);
       }
 
       @include media('<=sm') {
