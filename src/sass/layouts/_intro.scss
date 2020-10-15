@@ -25,6 +25,8 @@
   }
 
   &-img {
+    visibility: hidden;
+
     @include media('<=sm') {
       opacity: 0.75;
     }
