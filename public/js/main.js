@@ -114,7 +114,32 @@ $('.news__accordeon-toggle').on('click', function(e) {
   accordeon.addClass('is-open');
 })
 
+$('.brands__accordeon-toggle').on('click', function(e) {
+  e.preventDefault();
+
+  const accordeon = $(this).siblings('.accordeon').first();
+  if (accordeon.css('height') !== '0px' || !accordeon) return;
+  if (accordeon.length === 1) {
+    $(this).hide();
+  }
+  accordeon.css('height', accordeon[0].scrollHeight + 'px');
+  accordeon.addClass('is-open');
+})
+
 $('.accordeon').on('transitionend', function() {
   if ($(this).css('height') === '0px') return;
   $(this).css('height', 'auto');
+})
+
+$('button.brands__tab').on('click', function(e) {
+  const tabs = $('button.brands__tab');
+  const products = $('.brands__products');
+  const idx = $(this).index();
+  tabs.removeClass('is-active');
+  $(this).addClass('is-active');
+  products.removeClass('is-active');
+  products.hide();
+  $(products.get(idx))
+    .addClass('is-active')
+    .fadeIn();
 })
