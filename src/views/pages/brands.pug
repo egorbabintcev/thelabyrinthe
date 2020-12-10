@@ -119,47 +119,300 @@ block body
     section.brands
       .container
         h2.brands__title Our Brands.
-        .brands-product
-          .brands-product__img
-            p.brands-product__img-title
-              | LEFA&trade;JOINT &amp; MUSCLE
-              br
-              | PAIN RELIEF CREAM
-            img(src='/img/products-cream.png', alt='')
-          .brands-product__info
-            h4.brands-product__title
-              | L&emacr;fa provides penetrating, relief of minor aches and pains of muscles and joints associated with:
-            ul.brands-product__checklist
-              li Arthritis
-              li Sports injuries
-              li Simple backache
-              li Strains
-              li Sprains
-              li Bruises
-            p.brands-product__subtitle
-              | Uniquely developed to include the proven power of menthol coupled with botanicals that support the skin&apos;s Endocannabinoid System.
-            small.brands-product__description
-              | * 3,000 mg Beta-Caryophyllene
-              br
-              |           * 500 mg Full Spectrum Hemp Extract
-              br
-              |           * Trusted, fast-acting Menthol
-              br
-              |           * Plus, it&rsquo;s deeply penetrating, absorbs fast, and smells great!
-        .brands-product
-          .brands-product__img
-            p.brands-product__img-title
-              | LEFA&trade;ORGANIC
-              br
-              | HEMP OIL
-            img(src='/img/products-oil.png', alt='')
-          .brands-product__info
-            h4.brands-product__title
-              | L&emacr;fa hemp oil tinctures contain potent panoramic full spectrum hemp oil that is rich in phytocannabinoids from hemp including naturally occurring CBD!
-            p.brands-product__subtitle
-              | This panoramic oil is a powerful blend of pain and inflammation fighting phytocompounds, that work together synergistically, to provide better benefits than a single compound like CBD can alone! That&rsquo;s called the Entourage Effect!
-            small.brands-product__description
-              | The entourage of phytocannabinoids in full spectrum hemp oil provides maximum support to the Endocannabinoid System, which helps regulate systems in your body that have a significant impact on managing pain sensation and inflammation.
+        .brands-tabs
+          button.brands__tab.is-active
+            p Lefa
+          button.brands__tab
+            p Radien with QXP
+          button.brands__tab
+            p Maxoderm
+        .brands__products-wrapper
+          .brands__products.is-active
+            .brands-product
+              .brands-product__img
+                p.brands-product__img-title
+                  | LEFA&trade;JOINT &amp; MUSCLE
+                  br
+                  | PAIN RELIEF CREAM
+                img(src='/img/products-cream.png', alt='')
+              .brands-product__info
+                h4.brands-product__title
+                  | L&emacr;fa provides penetrating, relief of minor aches and pains of muscles and joints associated with:
+                ul.brands-product__checklist
+                  li Arthritis
+                  li Sports injuries
+                  li Simple backache
+                  li Strains
+                  li Sprains
+                  li Bruises
+                p.brands-product__subtitle
+                  | Uniquely developed to include the proven power of menthol coupled with botanicals that support the skin&apos;s Endocannabinoid System.
+                small.brands-product__description
+                  | * 3,000 mg Beta-Caryophyllene
+                  br
+                  |           * 500 mg Full Spectrum Hemp Extract
+                  br
+                  |           * Trusted, fast-acting Menthol
+                  br
+                  |           * Plus, it&rsquo;s deeply penetrating, absorbs fast, and smells great!
+            .brands-product
+              .brands-product__img
+                p.brands-product__img-title
+                  | LEFA&trade;ORGANIC
+                  br
+                  | HEMP OIL
+                img(src='/img/products-oil.png', alt='')
+              .brands-product__info
+                h4.brands-product__title
+                  | L&emacr;fa hemp oil tinctures contain potent panoramic full spectrum hemp oil that is rich in phytocannabinoids from hemp including naturally occurring CBD!
+                p.brands-product__subtitle
+                  | This panoramic oil is a powerful blend of pain and inflammation fighting phytocompounds, that work together synergistically, to provide better benefits than a single compound like CBD can alone! That&rsquo;s called the Entourage Effect!
+                small.brands-product__description
+                  | The entourage of phytocannabinoids in full spectrum hemp oil provides maximum support to the Endocannabinoid System, which helps regulate systems in your body that have a significant impact on managing pain sensation and inflammation.
+          .brands__products.brands__products_radien
+            .brands-product
+              .brands-product__img
+                p.brands-product__img-title
+                  | Radien&reg; with QXP&reg;
+                  br
+                  | DAY CREAM REPAIR
+                img(src='/img/radien/day-cream.png', alt='')
+              .brands-product__info
+                h4.brands-product__title
+                  | Daily use Day Cream is formulated for every day use on the face and neck.
+                p.brands-product__subtitle
+                  | Clinical studies of people ages 25 to 65 prove the Day Cream visibly
+                  | reverses the length and depth of wrinkles, brightens skin noticeably and
+                  | takes years off the skin’s appearance. Visible results in as little as 5 days!
+                  br
+                  br
+                  | The special formulation of sesame protein, together with
+                  | phytocompounds, reduces inflammation and restores collagen and
+                  | elastins
+                  br
+                  br
+                  | in the dermis. The combination of proteins and natural restorative
+                  | ingredients like honey extract and grape seed oil prevents future damage
+                  | by creating a defensive bed on the dermis layer.
+            .brands-product
+              .brands-product__img
+                p.brands-product__img-title
+                  | Radien&reg; with QXP&reg;
+                  br
+                  | NIGHT CREAM REPAIR
+                img(src='/img/radien/night-cream.png', alt='')
+              .brands-product__info
+                h4.brands-product__title
+                  | Formulated for night use, the Night Cream Repair contains higher levels of QXP peptide and protein agents that restore collagen and elastins
+                p.brands-product__subtitle
+                  | but include plant-based phytocompounds such as protein seed oils that deliver rich, natural compounds that drive deep in the dermis to build collagen back up.
+                  br
+                  br
+                  | Walnut extract further reduces inflammation and calms the dermal base, thereby hydrating and allowing for cellular repair and healing. Combined with orange peel extract and hemp, the Night Cream formulation reduces swelling in the skin and maintains essential levels of hydration.
+            .brands-product
+              .brands-product__img
+                p.brands-product__img-title
+                  | Radien&reg; with QXP&reg;
+                  br
+                  | EYE SERUM
+                img(src='/img/radien/eye-serum.png', alt='')
+              .brands-product__info
+                h4.brands-product__title
+                  | Radien with QXP Eye Serum restores skin cells in sensitive, thin areas
+                p.brands-product__subtitle
+                  | The eye formulation allows for collagen and gelatin regrowth under the eye where the epidermis and dermal layers are naturally thinner
+                  br
+                  br
+                  | Both natural aging and external factors like exposure to the sun can cause skin inflammation and deterioration to this sensitive area, and the QXP formulation with specially formulated citrus oil reduces inflammation and allows the collagen and gelatin to actively grow and repair the skin
+                  br
+                  br
+                  | Sensitive enough for the eye area and powerful enough to reduce discoloration and puffiness.
+            .brands-product
+              .brands-product__img
+                p.brands-product__img-title
+                  | Radien&reg; with QXP&reg;
+                  br
+                  | REPAIR CREAM FOR MEN
+                img(src='/img/radien/cream-for-men.png', alt='')
+              .brands-product__info
+                h4.brands-product__title
+                  | QXP for Men Advanced Anti-Aging Creme
+                p.brands-product__subtitle
+                  | It's  is formulated to provide all the protein and peptide benefits of healthy cellular growth in the dermis through phytocompound delivery
+                  br
+                  br
+                  | It also provides a higher, concentrated level of rich plant-based oils and oak bark (our highest formulation!) to better pass through a man’s thicker epidermis layer, creating a protective bed in the dermis against sun damage and aging
+            .accordeon
+              .brands-product
+                .brands-product__img
+                  p.brands-product__img-title
+                    | Radien&reg; with QXP&reg;
+                    br
+                    | LUXE DAY CREAM REPAIR
+                  img(src='/img/radien/luxe-day-cream.png', alt='')
+                .brands-product__info
+                  h4.brands-product__title
+                    | Luxe Daily use Day Cream is formulated for everyday use on the face and neck.
+                  p.brands-product__subtitle
+                    | Clinical studies of people ages 25 to 65 prove the Day Cream visibly reverses the length and depth of wrinkles, brightens skin noticeably and takes years off the skin’s appearance. Visible results in as little as 5 days!
+                    br
+                    br
+                    | The special formulation of sesame protein, together with phytocompounds, reduces inflammation and restores collagen and elastins in the dermis. The combination of proteins and natural restorative ingredients like honey extract and grape seed oil prevents future damage by creating a defensive bed on the dermis layer.
+              .brands-product
+                .brands-product__img
+                  p.brands-product__img-title
+                    | Radien&reg; with QXP&reg;
+                    br
+                    | LUXE NIGHT CREAM REPAIR
+                  img(src='/img/radien/luxe-night-cream.png', alt='')
+                .brands-product__info
+                  h4.brands-product__title
+                    | Luxe Daily Night Cream is highly concentrated to help deliver the highest percentage of peptides and QXP below the surface of the skin to repair and restore the youthful look
+                  p.brands-produt__subtitle
+                    | This cream has ‘plumpers’ to help the skin retain the added moisture.
+              .brands-product
+                .brands-product__img
+                  p.brands-product__img-title
+                    | Radien&reg; with QXP&reg;
+                    br
+                    | CLEANSER
+                  img(src='/img/radien/cleanser.png', alt='')
+                .brands-product__info
+                  h4.brands-product__title
+                    | The Cleanser is Step #1 in preparing the face and neck with a clean, make-up free surface that removes excess oil, dirt particles and foreign substances from the skin
+                  p.brands-product__subtitle
+                    | It reach deep into the dermal layer to remove and softly exfoliate the skin. This protein formulation effectively prepares the skin for the application of the Day Cream so it can perform its clinically-proven restoration of the skin
+              .brands-product
+                .brands-product__img
+                  p.brands-product__img-title
+                    | Radien&reg; with QXP&reg;
+                    br
+                    | TONER
+                  img(src='/img/radien/toner.png', alt='')
+                .brands-product__info
+                  h4.brands-product__title
+                    | The Toner is Step #2 in preparing the face and neck by tightening open pores, adding hydration to maintain elasticity and moisture once the Day and Night Creams are applied
+                  p.brands-product__subtitle
+                    |  The Toner closes large pores, protecting the epidermis from excess oils and toxins which may further damage healthy skin. This Toner rapidly restores the natural pH level of skin and can be used throughout the day, safely and effectively without drying and irritation
+                    br
+                    br
+                    | Toner allows the skin to appear less oily, prevents acne created from bacteria which resides in open pores, and instantly retains the skin’s natural body hydration
+            button.brands__accordeon-toggle.accordeon-toggle__button(type="button") Show more
+          .brands__products
+            .brands-product
+              .brands-product__img
+                p.brands-product__img-title
+                  | Maxoderm&trade;
+                  br
+                  | On-Demand
+                img(src='/img/maxoderm/on-demand.png', alt='')
+              .brands-product__info
+                h4.brands-product__title
+                  | Maxoderm On Demand is Pure Male Virility Surge!
+                p.brands-product__subtitle
+                  | Maxoderm Power Surge has been designed to work on-demand! It’s specifically for men looking for MORE POWER, MORE PERFORMANCE and LONGER-LASTING STAMINA when they need it most
+                  br
+                  br
+                  strong Feel the difference with your very first pill!
+            .brands-product
+                .brands-product__img
+                  p.brands-product__img-title
+                    | Maxoderm&trade;
+                    br
+                    | Topical
+                  img(src='/img/maxoderm/topical.png', alt='')
+                .brands-product__info
+                  h4.brands-product__title
+                    | Maxoderm Instant Topical is a unique patented formulation designed to help improve male virility, enhance sensation, and improve the feeling of firmness.
+                  p.brands-product__subtitle
+                    | You will FEEL and SEE a difference starting with your very first application and you will be amazed at how Maxoderm Power Up Topical maximizes your pleasure and makes every “experience” stronger.
+            .brands-product
+                .brands-product__img
+                  p.brands-product__img-title
+                    | Maxoderm&trade;
+                    br
+                    | Virility
+                  img(src='/img/maxoderm/virility.png', alt='')
+                .brands-product__info
+                  h4.brands-product__title
+                    | Maxoderm Power Drive daily is a supplement designed to sustain, prolong, and maintain increased levels of testosterone in men
+                  p.brands-product__subtitle
+                    | When taken daily it helps to increase energy, stamina, and sex drive
+            .brands-product
+                .brands-product__img
+                  p.brands-product__img-title
+                    | Maxoderm&trade;
+                    br
+                    | For her on-demand
+                  img(src='/img/maxoderm/in-the-mood.png', alt='')
+                .brands-product__info
+                  h4.brands-product__title
+                    | Maxoderm In the Mood is the potent on-demand libido-enhancing formula specifically made for women.
+                  p.brands-product__subtitle
+                    | Each ingredient in our blend was hand selected with your feminine needs in mind. Get ready to feel the difference with your very first serving!
+            .accordeon
+              .brands-product
+                  .brands-product__img
+                    p.brands-product__img-title
+                      | Maxoderm&trade;
+                      br
+                      | For her on-demand
+                    img(src='/img/maxoderm/right-now.png', alt='')
+                  .brands-product__info
+                    h4.brands-product__title
+                      | Feel the difference! Maxoderm for Her Right Now topical is the fast-acting sexual enhancer designed specifically with the internal sensitivities of a woman in mind.
+                    p.brands-product__subtitle
+                      |  Helping to enhance her sensation and pleasure privately or with a partner. Expect to feel greater responsiveness and improved arousal with the very first application!
+              .brands-product
+                  .brands-product__img
+                    p.brands-product__img-title
+                      | Maxoderm&trade;
+                      br
+                      | Libido
+                    img(src='/img/maxoderm/ever-ready.png', alt='')
+                  .brands-product__info
+                    h4.brands-product__title
+                      | Maxoderm Ever Ready is a daily supplement designed specifically for women to stimulate and maintain libido
+                    p.brands-product__subtitle
+                      | Each ingredient in Maxoderm for Her Ever Ready was carefully selected to drive libido based on her feminine needs
+                      br
+                      br
+                      | Take Maxoderm for Her Daily to increase, improve, and maintain desire and drive.
+              .brands-product
+                  .brands-product__img
+                    p.brands-product__img-title
+                      | Maxoderm&trade;
+                      br
+                      | T-Surge On-Demand
+                    img(src='/img/maxoderm/t-surge-on-demand.png', alt='')
+                  .brands-product__info
+                    h4.brands-product__title
+                      | Maxoderm testosterone surge is an on-demand formula that helps your body get that quick surge in performance strength, energy, and stamina that you’ve been looking for! Just take one capsule 30 minutes prior to physical activity
+                    p.brands-product__subtitle
+                      strong Feel a difference with your very first pill!
+              .brands-product
+                  .brands-product__img
+                    p.brands-product__img-title
+                      | Maxoderm&trade;
+                      br
+                      | Pump Up
+                    img(src='/img/maxoderm/pump-up.png', alt='')
+                  .brands-product__info
+                    h4.brands-product__title
+                      | Maxoderm Pump Up is a topical performance gel designed as a pre-workout amplifier. Pump Up provides a targeted NO2 surge to muscles for power, stamina, and energy.
+              .brands-product
+                  .brands-product__img
+                    p.brands-product__img-title
+                      | Maxoderm&trade;
+                      br
+                      | T-Boost Daily
+                    img(src='/img/maxoderm/t-boost-daily.png', alt='')
+                  .brands-product__info
+                    h4.brands-product__title
+                      | Maxoderm T-Boost Daily is a daily supplement designed to sustain, prolong, and maintain increased testosterone levels
+                    p.brands-product__subtitle
+                      | When taken daily, it will help to build lean muscle, increase strength and energy, and drive stamina.
+            button.brands__accordeon-toggle.accordeon-toggle__button(type="button") Show more
         .brands-steps
           .brands__step
             svg.brands__step-icon

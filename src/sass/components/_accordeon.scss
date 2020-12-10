@@ -14,4 +14,20 @@
       display: none;
     }
   }
+
+  &-toggle__button {
+    background: linear-gradient(0deg, rgba(0,117,197,1) 0%, rgba(3,152,254,1) 100%);
+    border-radius: rem(7);
+    color: #fff;
+    display: block;
+    font-size: rem(22);
+    font-weight: 600;
+    margin: 0 auto rem(80);
+    padding: rem(30) rem(70);
+    text-transform: uppercase;
+  }
+
+  &.is-open {
+    overflow: initial;
+  }
 }
